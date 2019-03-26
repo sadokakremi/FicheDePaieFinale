@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme formArrondissement 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+
+    <h1>Creation Arrondissement</h1>
+
+    {{ form_start(formArrondissement) }}
+
+    {{ form_widget(formArrondissement) }}
+    <button type="submit" class="btn btn-success">Ajouter l'arrondissement</button>
+
+    {{ form_end(formArrondissement) }}
+
+
+{% endblock %}

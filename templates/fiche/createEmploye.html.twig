@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme formEmploye 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+
+    <h1>Definir Employe</h1>
+
+    {{ form_start(formEmploye) }}
+
+    {{ form_widget(formEmploye) }}
+    <button type="submit" class="btn btn-success">Valider Employe</button>
+
+    {{ form_end(formEmploye) }}
+
+
+{% endblock %}

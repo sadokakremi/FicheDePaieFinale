@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme formPosteDeTravail 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+
+    <h1>Definir Poste De Travail</h1>
+
+    {{ form_start(formPosteDeTravail) }}
+
+    {{ form_widget(formPosteDeTravail) }}
+    <button type="submit" class="btn btn-success">Valider Poste De Travail</button>
+
+    {{ form_end(formPosteDeTravail) }}
+
+
+{% endblock %}

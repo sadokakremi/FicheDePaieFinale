@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme formSalaire 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+
+    <h1>Definir Salaire</h1>
+
+    {{ form_start(formSalaire) }}
+
+    {{ form_widget(formSalaire) }}
+    <button type="submit" class="btn btn-success">Valider Salaire</button>
+
+    {{ form_end(formSalaire) }}
+
+
+{% endblock %}

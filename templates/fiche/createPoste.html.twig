@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme formPoste 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+
+    <h1>Definir Poste</h1>
+
+    {{ form_start(formPoste) }}
+
+    {{ form_widget(formPoste) }}
+    <button type="submit" class="btn btn-success">Valider Poste</button>
+
+    {{ form_end(formPoste) }}
+
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme formAttestationTravail 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+
+    <h1>Definir Attestation De Travail</h1>
+
+    {{ form_start(formAttestationTravail) }}
+
+    {{ form_widget(formAttestationTravail) }}
+    <button type="submit" class="btn btn-success">Valider Attestation De Travail</button>
+
+    {{ form_end(formAttestationTravail) }}
+
+
+{% endblock %}

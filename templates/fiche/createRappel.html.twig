@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme formRappel 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+
+    <h1>Definir Rappel</h1>
+
+    {{ form_start(formRappel) }}
+
+    {{ form_widget(formRappel) }}
+    <button type="submit" class="btn btn-success">Valider Rappel</button>
+
+    {{ form_end(formRappel) }}
+
+
+{% endblock %}

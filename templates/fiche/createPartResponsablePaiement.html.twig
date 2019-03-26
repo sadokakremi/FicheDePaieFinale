@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme formPartResponsablePaiement 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+
+    <h1>Definir Parti Responsable Paiement</h1>
+
+    {{ form_start(formPartResponsablePaiement) }}
+
+    {{ form_widget(formPartResponsablePaiement) }}
+    <button type="submit" class="btn btn-success">Valider Parti Responsable Paiement</button>
+
+    {{ form_end(formPartResponsablePaiement) }}
+
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme formCharge 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+
+    <h1>Definir Charge</h1>
+
+    {{ form_start(formCharge) }}
+
+    {{ form_widget(formCharge) }}
+    <button type="submit" class="btn btn-success">Valider Charge</button>
+
+    {{ form_end(formCharge) }}
+
+
+{% endblock %}

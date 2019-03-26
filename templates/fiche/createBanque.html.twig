@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme formBanque 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+
+    <h1>Definir Banque</h1>
+
+    {{ form_start(formBanque) }}
+
+    {{ form_widget(formBanque) }}
+    <button type="submit" class="btn btn-success">Valider Banque</button>
+
+    {{ form_end(formBanque) }}
+
+
+{% endblock %}
