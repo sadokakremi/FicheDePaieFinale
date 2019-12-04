@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1>Details du rappel</h1>
+
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ rappel.id }}</td>
+        </tr>
+        <tr>
+            <th>Date_saisie</th>
+            <td>{{ rappel.datesaisie ? rappel.datesaisie|date('Y-m-d H:i:s') : '' }}</td>
+        </tr>
+        <tr>
+            <th>Espace_temps_requis</th>
+            <td>{{ rappel.espacetempsrequis ? rappel.espacetempsrequis|date('Y-m-d') : '' }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <a href="{{ path('rappel_index') }}">retour à la liste</a>
+
+    <a href="{{ path('rappel_edit', {'id': rappel.id}) }}">modifier</a>
+
+    <form method="post" action="{{ path('fiche_deleteRappel', {'id': rappel.id}) }}" onsubmit="return confirm('Êtes-vous sûr ');">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ rappel.id) }}">
+        <button class="btn btn-danger">Supprimer</button>
+    </form>
+
+
+{% endblock %}

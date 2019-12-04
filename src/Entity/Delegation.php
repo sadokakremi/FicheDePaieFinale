@@ -21,7 +21,7 @@ class Delegation
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $nom_delegation;
+    public $nom_delegation;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Arrondissement", inversedBy="delegations")
@@ -33,6 +33,11 @@ class Delegation
      * @ORM\OneToMany(targetEntity="App\Entity\PosteDeTravail", mappedBy="postesdetravail")
      */
     private $posteDeTravails;
+
+    public function __toText()
+    {
+        return 'id'. $this->id.'  '.'nom_delegation'.' '.$this->nom_delegation;
+    }
 
     public function __construct()
     {
@@ -56,14 +61,14 @@ class Delegation
         return $this;
     }
 
-    public function getDelegations(): ?Arrondissement
+    public function getArrondissement(): ?Arrondissement
     {
         return $this->arrondissement;
     }
 
-    public function setDelegations(?Arrondissement $delegations): self
+    public function setArrondissement(?Arrondissement $arrondissement): self
     {
-        $this->arrondissement = $delegations;
+        $this->arrondissement = $arrondissement;
 
         return $this;
     }

@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier Parti Responsable Paiement{% endblock %}
+
+{% block body %}
+    <h1>Modifier Parti Responsable Paiement</h1>
+    {{ form_start(formPartResponsablePaiement) }}
+    {{ form_widget(formPartResponsablePaiement) }}
+
+    {{ include('fiche/formPartResponsablePaiement.html.twig', {'button_label': 'Modifier'}) }}
+    {{ form_end(formPartResponsablePaiement) }}
+
+    <a href="{{ path('PartResponsablePaiement_index') }}">retour à la liste</a>
+
+
+
+{% endblock %}

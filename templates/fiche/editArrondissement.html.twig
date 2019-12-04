@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier Arrondissement{% endblock %}
+
+{% block body %}
+    <h1>Modifier Arrondissement</h1>
+
+    {{ include('fiche/formArrondissement.html.twig', {'button_label': 'Modifier'}) }}
+    <a href="{{ path('attestationArretTravail_index') }}">retour à la liste</a>
+
+
+
+
+
+{% endblock %}

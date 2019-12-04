@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+    <h1>Attestation De Travail</h1>
+
+
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ attestationTravail.id }}</td>
+        </tr>
+        <tr>
+            <th>Date_impression</th>
+            <td>{{ attestationTravail.dateImpression ? attestationTravail.dateImpression|date('Y-m-d H:i:s') : '' }}</td>
+            <th>Nom employe</th>
+            <td>{{ attestationTravail.employe }}</td>
+            <th>nom employeur</th>
+            <td>{{ attestationTravail.partresponsablepayement.nom_employeur }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('attestationTravail_index') }}">la liste</a>
+
+    <a href="{{ path('attestationTravail_edit', {'id': attestationTravail.id}) }}">modifier</a>
+
+
+    <form method="post" action="{{ path('fiche_deleteAttestationTravail', {'id': attestationTravail.id}) }}" onsubmit="return confirm('Êtes-vous sûr ');">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ attestationTravail.id) }}">
+        <button class="btn btn-danger">Supprimer</button>
+    </form>
+
+
+
+
+
+
+
+
+
+{% endblock %}

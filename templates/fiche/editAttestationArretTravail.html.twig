@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier Attestation Arret De Travail{% endblock %}
+
+{% block body %}
+    <h1>Modifier Attestation Arret De Travail</h1>
+
+    {{ form_start(formAttestationArretTravail) }}
+    {{ form_widget(formAttestationArretTravail) }}
+
+    {{ include('fiche/formAttestationArretTravail.html.twig', {'button_label': 'Modifier'}) }}
+    {{ form_end(formAttestationArretTravail) }}
+
+    <a href="{{ path('arrondissement_index') }}">retour à la liste</a>
+
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier Delegation{% endblock %}
+
+{% block body %}
+    <h1>Modifier Delegation</h1>
+    {{ form_start(formDelegation) }}
+    {{ form_widget(formDelegation) }}
+
+    {{ include('fiche/formDelegation.html.twig', {'button_label': 'Modifier'}) }}
+    {{ form_end(formDelegation) }}
+
+    <a href="{{ path('delegation_index') }}">retour à la liste</a>
+
+
+{% endblock %}

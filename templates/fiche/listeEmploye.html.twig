@@ -1,0 +1,57 @@
+
+
+{% block body %}
+
+
+    <h1>Employe </h1>
+
+    <table id="employe_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Cin</th>
+            <th>Cnss</th>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Lieu_de_naissance</th>
+            <th>Statut_familial</th>
+            <th>Adresse</th>
+            <th>Matricule</th>
+            <th>Telephone</th>
+            <th>Diplome</th>
+            <th>Niveau_scolaire</th>
+            <th>Age</th>
+            <th>Date_de_naissance</th>
+            <th>Date_debut_travail</th>
+            <th>CreatedAt</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for employe in employes %}
+            <tr>
+                <td>{{ employe.id }}</td>
+                <td>{{ employe.cin }}</td>
+                <td>{{ employe.cnss }}</td>
+                <td>{{ employe.nom }}</td>
+                <td>{{ employe.prenom }}</td>
+                <td>{{ employe.lieuDeNaissance }}</td>
+                <td>{{ employe.statutFamilial }}</td>
+                <td>{{ employe.adresse }}</td>
+                <td>{{ employe.matricule }}</td>
+                <td>{{ employe.telephone }}</td>
+                <td>{{ employe.diplome }}</td>
+                <td>{{ employe.niveauScolaire }}</td>
+                <td>{{ employe.age }}</td>
+                <td>{{ employe.dateDeNaissance ? employe.dateDeNaissance|date('Y-m-d') : '' }}</td>
+                <td>{{ employe.dateDebutTravail ? employe.dateDebutTravail|date('Y-m-d') : '' }}</td>
+                <td>{{ employe.createdAt ? employe.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}

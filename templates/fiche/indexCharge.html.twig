@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Charge {% endblock %}
+
+{% block body %}
+
+
+    <h1>Charge </h1>
+
+    <table id="charge_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Date</th>
+            <th>Charge_cnss_patron</th>
+            <th>Charge_cnss_employe</th>
+            <th>Taxe</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for charge in charges %}
+            <tr>
+                <td>{{ charge.id }}</td>
+                <td>{{ charge.date ? charge.date|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ charge.chargeCnssPatron }}</td>
+                <td>{{ charge.chargeCnssEmploye }}</td>
+                <td>{{ charge.taxe }}</td>
+                <td>
+                    <a href="{{ path('fiche_showCharge', {'id': charge.id}) }}">afficher</a>
+                    <a href="{{ path('charge_edit', {'id': charge.id}) }}">modifier</a>
+                    <a href="{{ path('fiche_deleteCharge', {'id': charge.id}) }}">supprimer</a>
+
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">rien</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('charges_create') }}">Ajouter Cahrge</a>
+{% endblock %}
+{% block javascripts %}
+    <script>
+
+        $(document).ready( function () {
+            $('#charge_Datatable').DataTable();
+        } );
+    </script>
+{% endblock %}

@@ -27,6 +27,17 @@ class PosteDeTravail
      */
     private $delegation;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Arrondissement", inversedBy="posteDeTravails")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $arrondissement;
+
+    public function __toText()
+    {
+        return 'id'. $this->id.'  '.'adresse'.' '.$this->adresse;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -44,14 +55,26 @@ class PosteDeTravail
         return $this;
     }
 
-    public function getPostesdetravail(): ?Delegation
+    public function getDelegation(): ?Delegation
     {
         return $this->delegation;
     }
 
-    public function setPostesdetravail(?Delegation $postesdetravail): self
+    public function setDelegation(?Delegation $delegation): self
     {
-        $this->delegation = $postesdetravail;
+        $this->delegation = $delegation;
+
+        return $this;
+    }
+
+    public function getArrondissement(): ?Arrondissement
+    {
+        return $this->arrondissement;
+    }
+
+    public function setArrondissement(?Arrondissement $arrondissement): self
+    {
+        $this->arrondissement = $arrondissement;
 
         return $this;
     }

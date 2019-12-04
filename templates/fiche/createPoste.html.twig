@@ -3,6 +3,7 @@
 {% form_theme formPoste 'bootstrap_4_layout.html.twig' %}
 
 {% block body %}
+    {% if app.user %}
 
     <h1>Definir Poste</h1>
 
@@ -12,6 +13,16 @@
     <button type="submit" class="btn btn-success">Valider Poste</button>
 
     {{ form_end(formPoste) }}
+
+    {% else %}
+        <h2>Veuillez vous connecter</h2>
+        <a href="/connexion" class="btn btn-primary">
+            Connexion
+        </a>
+
+    {% endif %}
+    <a href="{{ path('poste_index') }}">retour à la liste</a>
+
 
 
 {% endblock %}

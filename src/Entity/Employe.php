@@ -3,9 +3,15 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\EmployeRepository")
+ * @UniqueEntity(
+ *    fields={"cin"},
+ *     message="Le cin que vous avez utilisé est deja inscrit"
+ *
+ * )
  */
 class Employe
 {
@@ -22,7 +28,7 @@ class Employe
     private $cin;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="integer")
      */
     private $cnss;
 
@@ -57,7 +63,7 @@ class Employe
     private $matricule;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="integer")
      */
     private $telephone;
 
@@ -90,6 +96,11 @@ class Employe
      * @ORM\Column(type="datetime")
      */
     private $createdAt;
+
+    public function __toText()
+    {
+        return 'id'. $this->id.'  '.'cin'.' '.$this->cin.'  '.'cnss'.' '.$this->cnss.'  '.'nom'.' '.$this->nom.'  '.'prenom'.' '.$this->prenom.'  '.'lieu_de_naissance'.' '.$this->lieu_de_naissance.'  '.'statut_familial'.' '.$this->statut_familial.'  '.'adresse'.' '.$this->adresse.'  '.'matricule'.' '.$this->matricule.'  '.'telephone'.' '.$this->telephone.'  '.'diplome'.' '.$this->diplome.'  '.'niveau_scolaire'.' '.$this->niveau_scolaire.'  '.'age'.' '.$this->age.'  '.'date_de_naissance'.' '.$this->date_de_naissance.'  '.'date_debut_travail'.' '.$this->date_debut_travail.'  '.'createdAt'.' '.$this->createdAt;
+    }
 
     public function getId(): ?int
     {
@@ -275,4 +286,10 @@ class Employe
 
         return $this;
     }
+
+    public function __toString()
+    {
+        return $this->nom;    }
+
+
 }

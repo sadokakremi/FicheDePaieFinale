@@ -21,7 +21,7 @@ class Banque
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $nom_banque;
+    public $nom_banque;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -29,7 +29,7 @@ class Banque
     private $adresse_banque;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="integer")
      */
     private $telephone_banque;
 
@@ -37,6 +37,11 @@ class Banque
      * @ORM\OneToMany(targetEntity="App\Entity\PartResponsablePayement", mappedBy="banque")
      */
     private $payement;
+
+    public function __toText()
+    {
+        return 'id'. $this->id.'  '.'nom_banque'.' '.$this->nom_banque.'  '.'adresse_banque'.' '.$this->adresse_banque.'  '.'telephone_banque'.' '.$this->telephone_banque;
+    }
 
     public function __construct()
     {

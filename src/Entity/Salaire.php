@@ -41,10 +41,12 @@ class Salaire
      */
     private $nbre_heures_travail;
 
-    /**
-     * @ORM\OneToOne(targetEntity="App\Entity\BulletinDePaie", cascade={"persist", "remove"})
-     */
-    private $bulletin;
+    public function __toText()
+    {
+        return 'id'. $this->id.'  '.'type_de_paiement'.' '.$this->type_de_paiement.'  '.'categorie_salaire'.' '.$this->categorie_salaire.'  '.'montant_salaire'.' '.$this->montant_salaire.'  '.'date_attribution_salaire'.' '.$this->date_attribution_salaire.'  '.'nbre_heures_travail'.' '.$this->nbre_heures_travail;
+    }
+
+
 
     public function getId(): ?int
     {

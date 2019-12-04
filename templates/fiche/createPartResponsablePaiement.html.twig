@@ -3,6 +3,7 @@
 {% form_theme formPartResponsablePaiement 'bootstrap_4_layout.html.twig' %}
 
 {% block body %}
+    {% if app.user %}
 
     <h1>Definir Parti Responsable Paiement</h1>
 
@@ -12,6 +13,16 @@
     <button type="submit" class="btn btn-success">Valider Parti Responsable Paiement</button>
 
     {{ form_end(formPartResponsablePaiement) }}
+
+    {% else %}
+        <h2>Veuillez vous connecter</h2>
+        <a href="/connexion" class="btn btn-primary">
+            Connexion
+        </a>
+
+    {% endif %}
+    <a href="{{ path('PartResponsablePaiement_index') }}">retour à la liste</a>
+
 
 
 {% endblock %}

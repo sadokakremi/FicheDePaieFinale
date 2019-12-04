@@ -1,7 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="703cb4dc-8ad6-493b-91bc-cfbe0299cbff" name="Default" comment="" />
+    <list default="true" id="703cb4dc-8ad6-493b-91bc-cfbe0299cbff" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_20_09_19_01_20_s.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controller/SearchController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Entity/Log.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EventListener/DatabaseActivitySubscriber.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/ArrondissementType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/AttestationArretTravailType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/AttestationTravailType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/BanqueType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/ChargeType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/DelegationType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/EmployeType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/PartResponsablePayementType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/PosteDeTravailType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/PosteType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/RappelType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/Salaire1Type.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/SalaireType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190327090156.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190327100945.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190327104511.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190327113425.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328075623.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328075919.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328080641.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328080844.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328081002.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328081733.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328082143.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328140541.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190329111228.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190329152359.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190330095520.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190330125505.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190401124308.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190425104723.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Repository/LogRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Service/UserLog.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editArrondissement.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editAttestationArretTravail.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editAttestationTravail.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editBanque.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editCharge.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editDelegation.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editEmploye.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editPartResponsablePaiement.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editPoste.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editPosteDeTravail.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editRappel.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editSalaire.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formArrondissement.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formAttestationArretTravail.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formAttestationTravail.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formDelegation.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formPartResponsablePaiement.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formPoste.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formPosteDeTravail.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formSalaire.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexArrondissement.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexAttestationArretTravail.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexAttestationTravail.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexBanque.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexCharge.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexDelegation.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexEmploye.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexPartResponsablePaiement.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexPoste.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexPosteDeTravail.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexRappel.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexSalaire.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/listeEmploye.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/listePartResponsablePaiement.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/listePosteDeTravail.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/listearrondissement.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/listebanque.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/listedelegation.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/listeposte.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/rechArrondissement.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showArrondissement.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showAttestationArretTravail.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showAttestationTravail.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showBanque.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showCharge.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showDelegation.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showEmploye.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showPartResponsablePaiement.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showPoste.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showPosteDeTravail.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showRappel.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showSalaire.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/sym.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/search/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/search/searchBar.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/packages/security.yaml" afterPath="$PROJECT_DIR$/config/packages/security.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/services.yaml" afterPath="$PROJECT_DIR$/config/services.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/FicheController.php" afterPath="$PROJECT_DIR$/src/Controller/FicheController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/SecurityContollerController.php" afterPath="$PROJECT_DIR$/src/Controller/SecurityContollerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Arrondissement.php" afterPath="$PROJECT_DIR$/src/Entity/Arrondissement.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/AttestationArretTravail.php" afterPath="$PROJECT_DIR$/src/Entity/AttestationArretTravail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/AttestationTravail.php" afterPath="$PROJECT_DIR$/src/Entity/AttestationTravail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Banque.php" afterPath="$PROJECT_DIR$/src/Entity/Banque.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/BulletinDePaie.php" afterPath="$PROJECT_DIR$/src/Entity/BulletinDePaie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Charge.php" afterPath="$PROJECT_DIR$/src/Entity/Charge.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Delegation.php" afterPath="$PROJECT_DIR$/src/Entity/Delegation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Employe.php" afterPath="$PROJECT_DIR$/src/Entity/Employe.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/PartResponsablePayement.php" afterPath="$PROJECT_DIR$/src/Entity/PartResponsablePayement.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Poste.php" afterPath="$PROJECT_DIR$/src/Entity/Poste.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/PosteDeTravail.php" afterPath="$PROJECT_DIR$/src/Entity/PosteDeTravail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Rappel.php" afterPath="$PROJECT_DIR$/src/Entity/Rappel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Salaire.php" afterPath="$PROJECT_DIR$/src/Entity/Salaire.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/User.php" afterPath="$PROJECT_DIR$/src/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony.lock" afterPath="$PROJECT_DIR$/symfony.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html.twig" afterPath="$PROJECT_DIR$/templates/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createArrondissement.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createArrondissement.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createAttestationArretTravail.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createAttestationArretTravail.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createAttestationTravail.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createAttestationTravail.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createBanque.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createBanque.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createCharge.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createCharge.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createDelegation.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createDelegation.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createEmploye.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createEmploye.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createPartResponsablePaiement.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createPartResponsablePaiement.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createPoste.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createPoste.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createPosteDeTravail.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createPosteDeTravail.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createRappel.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createRappel.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createSalaire.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createSalaire.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/home.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/home.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/index.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/security_contoller/login.html.twig" afterPath="$PROJECT_DIR$/templates/security_contoller/login.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/security_contoller/registration.html.twig" afterPath="$PROJECT_DIR$/templates/security_contoller/registration.html.twig" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,21 +144,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <file leaf-file-name="DatabaseActivitySubscriber.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/EventListener/DatabaseActivitySubscriber.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="739">
-              <caret line="53" column="53" lean-forward="false" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="76" />
+            <state relative-caret-position="1224">
+              <caret line="92" column="56" lean-forward="false" selection-start-line="92" selection-start-column="56" selection-end-line="92" selection-end-column="56" />
+              <folding>
+                <element signature="e#119#149#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecurityContollerController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/SecurityContollerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FicheController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Log.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Log.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Delegation.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Delegation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FicheController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/FicheController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="414" column="86" lean-forward="true" selection-start-line="414" selection-start-column="86" selection-end-line="414" selection-end-column="86" />
+            <state relative-caret-position="30583">
+              <caret line="1861" column="42" lean-forward="false" selection-start-line="1861" selection-start-column="42" selection-end-line="1861" selection-end-column="42" />
               <folding>
                 <element signature="e#34#64#0#PHP" expanded="true" />
               </folding>
@@ -33,11 +198,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AttestationArretTravail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/AttestationArretTravail.php">
+      <file leaf-file-name="UserLog.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Service/UserLog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="28" />
+            <state relative-caret-position="136">
+              <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="59" column="20" lean-forward="false" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/services.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="55" lean-forward="false" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Arrondissement.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Arrondissement.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -45,34 +240,71 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>editrap</find>
+      <find>deleterap</find>
+      <find>creater</find>
+      <find>showsa</find>
+      <find>editsal</find>
+      <find>deletesal</find>
+      <find>createsa</find>
+      <find>editatt</find>
+      <find>editat</find>
+      <find>createat</find>
+      <find>createatt</find>
+      <find>editposte</find>
+      <find>createpo</find>
+      <find>editpo</find>
+      <find>creat</find>
+      <find>createa</find>
+      <find>showarr</find>
+      <find>sa</find>
+      <find>salaire</find>
+      <find>postede</find>
+      <find>part</find>
+      <find>indexpar</find>
+      <find>indexpa</find>
+      <find>partiresponsablepayement_create</find>
+      <find>indexp</find>
+      <find>createe</find>
+      <find>pers</find>
+      <find>persis</find>
+      <find>posted</find>
+      <find>arr</find>
+    </findStrings>
+  </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="php bin/console make:migration" />
-      <command text="php bin/console doctrine:migrations:migrate" />
-      <command text="php bin/console make:entity" />
-      <command text="php bin/console make:migration" />
-      <command text="php bin/console doctrine:migrations:migrate" />
-      <command text="php bin/console make:entity" />
-      <command text="php bin/console make:migration" />
-      <command text="php bin/console doctrine:migrations:migrate" />
+      <command text="s make:entity Log" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:schema:update -f " />
+      <command text="s doctrine:schema:update" />
+      <command text="s doctrine:schema:update --force " />
       <command text="php bin/console server:run" />
-      <command text="php bin/console make:entity User" />
-      <command text="php bin/console make:migration" />
-      <command text="php bin/console doctrine:migrations:migrate" />
-      <command text="php bin/console make:form RegistrationType" />
-      <command text="php bin/console make:controller" />
-      <command text="php bin/console server:run" />
-      <command text="php bin/console make:controller" />
-      <command text="php bin/console server:run" />
-      <command text="php bin/console remove:entity" />
-      <command text="make:migration" />
-      <command text="php bin/console make:migration" />
-      <command text="php bin/console doctrine:migrations:migrate" />
-      <command text="php bin/console make:migration" />
-      <command text="php bin/console doctrine:migrations:migrate" />
-      <command text="php bin/console make:migration" />
-      <command text="php bin/console doctrine:migrations:migrate" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="php bin/console debug:autowiring" />
+      <command text=" php bin/console debug:container " />
+      <command text="s doctrine:schema:update --force " />
+      <command text="git remote add origin https://github.com/sadokakremi/FicheDePaie.git" />
+      <command text="git push -u origin master" />
+      <command text="git push  origin master" />
+      <command text="echo &quot;# FicheDePaie&quot;" />
+      <command text="git init" />
+      <command text="git add" />
+      <command text="git add README.md" />
+      <command text="git commit -m" />
+      <command text="git commit " />
+      <command text="git remote add origin https://github.com/sadokakremi/FicheDePaie.git" />
+      <command text="git push -u origin master" />
+      <command text="git push origin master" />
+      <command text="rd .git /S/Q" />
+      <command text="git init" />
+      <command text="git add." />
     </commandsHistory>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
@@ -80,33 +312,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/src/Migrations/Version20190109105700.php" />
-        <option value="$PROJECT_DIR$/templates/security_contoller/registration.html.twig" />
-        <option value="$PROJECT_DIR$/src/Form/RegistrationType.php" />
-        <option value="$PROJECT_DIR$/src/Entity/User.php" />
-        <option value="$PROJECT_DIR$/templates/security_contoller/login.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/SecurityContollerController.php" />
-        <option value="$PROJECT_DIR$/config/packages/security.yaml" />
-        <option value="$PROJECT_DIR$/templates/fiche/index.html.twig" />
-        <option value="$PROJECT_DIR$/config/packages/twig.yaml" />
+        <option value="$PROJECT_DIR$/templates/fiche/showDelegation.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/showPartResponsablePaiement.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/showPosteDeTravail.html.twig" />
         <option value="$PROJECT_DIR$/templates/fiche/createArrondissement.html.twig" />
-        <option value="$PROJECT_DIR$/src/Entity/PosteDeTravail.php" />
-        <option value="$PROJECT_DIR$/src/Entity/Delegation.php" />
-        <option value="$PROJECT_DIR$/templates/fiche/home.html.twig" />
-        <option value="$PROJECT_DIR$/templates/fiche/createSalaire.html.twig" />
-        <option value="$PROJECT_DIR$/templates/fiche/createRappel.html.twig" />
-        <option value="$PROJECT_DIR$/templates/fiche/createPoste.html.twig" />
-        <option value="$PROJECT_DIR$/templates/fiche/createPartResponsablePaiement.html.twig" />
-        <option value="$PROJECT_DIR$/templates/fiche/createEmploye.html.twig" />
-        <option value="$PROJECT_DIR$/templates/fiche/createDelegation.html.twig" />
-        <option value="$PROJECT_DIR$/templates/fiche/createCharge.html.twig" />
-        <option value="$PROJECT_DIR$/templates/fiche/createBanque.html.twig" />
-        <option value="$PROJECT_DIR$/templates/fiche/createAttestationArretTravail.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/sym.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/SecurityContollerController.php" />
+        <option value="$PROJECT_DIR$/templates/fiche/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
-        <option value="$PROJECT_DIR$/templates/fiche/createPosteDeTravail.html.twig" />
-        <option value="$PROJECT_DIR$/templates/fiche/createAttestationTravail.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/home.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/listearrondissement.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/indexArrondissement.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/listedelegation.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/indexPosteDeTravail.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/listePosteDeTravail.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/listebanque.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/indexBanque.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/listeposte.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/indexPoste.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/listePartResponsablePaiement.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/indexPartResponsablePaiement.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/listeEmploye.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/indexEmploye.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/indexDelegation.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fiche/showEmploye.html.twig" />
+        <option value="$PROJECT_DIR$/src/EventListener/KernelException.php" />
+        <option value="$PROJECT_DIR$/src/EventSubscriber/KernelSubscriber.php" />
+        <option value="$PROJECT_DIR$/src/EventListener/TodoListener.php" />
+        <option value="$PROJECT_DIR$/src/EventSubscriber/TodoSubscriber.php" />
+        <option value="$PROJECT_DIR$/src/EventListener/ArrondissementListener.php" />
+        <option value="$PROJECT_DIR$/src/Controller/customEvents/ArrondissementEvent.php" />
+        <option value="$PROJECT_DIR$/config/services.yaml" />
+        <option value="$PROJECT_DIR$/src/Entity/AttestationArretTravail.php" />
+        <option value="$PROJECT_DIR$/src/Entity/AttestationTravail.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Banque.php" />
+        <option value="$PROJECT_DIR$/src/Entity/BulletinDePaie.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Charge.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Delegation.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Employe.php" />
+        <option value="$PROJECT_DIR$/src/Entity/PartResponsablePayement.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Poste.php" />
+        <option value="$PROJECT_DIR$/src/Entity/PosteDeTravail.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Rappel.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Salaire.php" />
+        <option value="$PROJECT_DIR$/templates/fiche/showArrondissement.html.twig" />
+        <option value="$PROJECT_DIR$/src/Entity/Arrondissement.php" />
+        <option value="$PROJECT_DIR$/src/Controller/LogController.php" />
+        <option value="$PROJECT_DIR$/src/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Service/UserLog.php" />
         <option value="$PROJECT_DIR$/src/Controller/FicheController.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Log.php" />
+        <option value="$PROJECT_DIR$/src/EventListener/DatabaseActivitySubscriber.php" />
       </list>
     </option>
   </component>
@@ -118,10 +374,12 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="944" />
-    <option name="y" value="17" />
-    <option name="width" value="933" />
-    <option name="height" value="758" />
+    <option name="x" value="890" />
+    <option name="width" value="1012" />
+    <option name="height" value="1045" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -159,36 +417,39 @@
               <item name="FicheDePaie" type="b2602c69:ProjectViewProjectNode" />
               <item name="FicheDePaie" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FicheDePaie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FicheDePaie" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="FicheDePaie" type="b2602c69:ProjectViewProjectNode" />
               <item name="FicheDePaie" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventListener" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="FicheDePaie" type="b2602c69:ProjectViewProjectNode" />
               <item name="FicheDePaie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="FicheDePaie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FicheDePaie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="fiche" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FichePaie" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -225,21 +486,70 @@
       <workItem from="1551788814572" duration="5120000" />
       <workItem from="1553238093515" duration="6543000" />
       <workItem from="1553580787598" duration="11713000" />
+      <workItem from="1553595551528" duration="600000" />
+      <workItem from="1553667384851" duration="15724000" />
+      <workItem from="1553759337822" duration="21410000" />
+      <workItem from="1553797069839" duration="1600000" />
+      <workItem from="1553841168840" duration="14904000" />
+      <workItem from="1553871826083" duration="1262000" />
+      <workItem from="1553930435071" duration="19575000" />
+      <workItem from="1554111933925" duration="14408000" />
+      <workItem from="1554200718184" duration="2383000" />
+      <workItem from="1554203768569" duration="549000" />
+      <workItem from="1554303562403" duration="5101000" />
+      <workItem from="1554309518203" duration="4381000" />
+      <workItem from="1554472105740" duration="5260000" />
+      <workItem from="1556186936173" duration="3065000" />
+      <workItem from="1556869818424" duration="621000" />
+      <workItem from="1561506477526" duration="740000" />
+      <workItem from="1561572604707" duration="35000" />
+      <workItem from="1561626067363" duration="1253000" />
+      <workItem from="1568116124032" duration="595000" />
+      <workItem from="1568590427555" duration="1178000" />
+      <workItem from="1568826481688" duration="741000" />
+      <workItem from="1568936810037" duration="615000" />
+      <workItem from="1568938667043" duration="456000" />
+      <workItem from="1568939285070" duration="534000" />
+      <workItem from="1569305050999" duration="1889000" />
+      <workItem from="1569307793604" duration="299000" />
+      <workItem from="1569308531901" duration="225000" />
+      <workItem from="1569392204502" duration="3214000" />
+      <workItem from="1569403553760" duration="987000" />
+      <workItem from="1569405679023" duration="282000" />
+      <workItem from="1569406776774" duration="504000" />
+      <workItem from="1569497494907" duration="860000" />
+      <workItem from="1569498517667" duration="84000" />
+      <workItem from="1569498927287" duration="45000" />
+      <workItem from="1569499118351" duration="2460000" />
+      <workItem from="1569675372134" duration="1223000" />
+      <workItem from="1569919391177" duration="978000" />
+      <workItem from="1570114984004" duration="1903000" />
+      <workItem from="1570179246031" duration="867000" />
+      <workItem from="1570634327151" duration="1644000" />
+      <workItem from="1570786457855" duration="305000" />
+      <workItem from="1571045758214" duration="33000" />
+      <workItem from="1574336056058" duration="111000" />
+      <workItem from="1574336609642" duration="4843000" />
+      <workItem from="1574427478540" duration="9932000" />
+      <workItem from="1575049086309" duration="14379000" />
+      <workItem from="1575306815661" duration="8044000" />
+      <workItem from="1575380985342" duration="21442000" />
+      <workItem from="1575474831340" duration="1758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60782000" />
+    <option name="totallyTimeSpent" value="256083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19270833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32142857" sideWeight="0.5038168" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54632586" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46103895" sideWeight="0.49618322" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -250,7 +560,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -267,144 +577,150 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190109110242.php" />
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190109110914.php" />
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190109103849.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Migrations/.gitignore">
+    <entry file="file://$PROJECT_DIR$/templates/fiche/listeposte.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190109103711.php">
+    <entry file="file://$PROJECT_DIR$/templates/fiche/listePartResponsablePaiement.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fiche/indexPartResponsablePaiement.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="50" column="51" lean-forward="false" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fiche/listeEmploye.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/search/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190109101756.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190109102355.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190109102621.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190109103006.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190109103325.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190109103539.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/RegistrationType.php">
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="18" column="58" lean-forward="false" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-          <folding>
-            <element signature="e#28#48#0#PHP" expanded="false" />
-          </folding>
+          <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/security_contoller/login.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/fiche/indexEmploye.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        <state relative-caret-position="890">
+          <caret line="61" column="20" lean-forward="true" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/security_contoller/registration.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/fiche/indexArrondissement.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="142" lean-forward="false" selection-start-line="7" selection-start-column="142" selection-end-line="7" selection-end-column="142" />
+        <state relative-caret-position="367">
+          <caret line="52" column="15" lean-forward="false" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/SecurityContollerController.php">
+    <entry file="file://$PROJECT_DIR$/templates/fiche/indexBanque.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="61" column="34" lean-forward="false" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+        <state relative-caret-position="559">
+          <caret line="43" column="34" lean-forward="false" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
+    <entry file="file://$PROJECT_DIR$/templates/fiche/showPartResponsablePaiement.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="374">
+          <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+    <entry file="file://$PROJECT_DIR$/templates/fiche/showCharge.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="14" column="63" lean-forward="false" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-          <folding>
-            <element signature="e#30#62#0#PHP" expanded="false" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/twig.yaml">
+    <entry file="file://$PROJECT_DIR$/templates/fiche/showEmploye.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        <state relative-caret-position="17">
+          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fiche/createEmploye.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fiche/indexDelegation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="47" column="51" lean-forward="false" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fiche/showBanque.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EventListener/KernelException.php" />
+    <entry file="file://$PROJECT_DIR$/src/EventSubscriber/KernelSubscriber.php" />
+    <entry file="file://$PROJECT_DIR$/src/EventSubscriber/TodoSubscriber.php" />
+    <entry file="file://$PROJECT_DIR$/src/EventListener/TodoListener.php" />
+    <entry file="file://$PROJECT_DIR$/src/Controller/customEvents/ArrondissementEvent.php" />
+    <entry file="file://$PROJECT_DIR$/src/EventListener/ArrondissementListener.php" />
+    <entry file="file://$PROJECT_DIR$/src/Entity/AttestationArretTravail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="45" column="163" lean-forward="true" selection-start-line="45" selection-start-column="163" selection-end-line="45" selection-end-column="163" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Arrondissement.php">
+    <entry file="file://$PROJECT_DIR$/src/Entity/AttestationTravail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="67" column="21" lean-forward="false" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        <state relative-caret-position="388">
+          <caret line="35" column="80" lean-forward="false" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/ArrondissementRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/Entity/Banque.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="42" column="170" lean-forward="false" selection-start-line="42" selection-start-column="170" selection-end-line="42" selection-end-column="170" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Employe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="101" column="615" lean-forward="true" selection-start-line="101" selection-start-column="615" selection-end-line="101" selection-end-column="615" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Enregistrement.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -412,58 +728,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
+    <entry file="file://$PROJECT_DIR$/src/Entity/PartResponsablePayement.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="307">
+          <caret line="57" column="238" lean-forward="false" selection-start-line="57" selection-start-column="238" selection-end-line="57" selection-end-column="238" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+    <entry file="file://$PROJECT_DIR$/src/Entity/Rappel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/dev/routing.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche/home.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        <state relative-caret-position="337">
+          <caret line="30" column="131" lean-forward="true" selection-start-line="30" selection-start-column="131" selection-end-line="30" selection-end-column="131" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Salaire.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="32" />
+        <state relative-caret-position="164">
+          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche/createRappel.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Entity/BulletinDePaie.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        <state relative-caret-position="329">
+          <caret line="31" column="117" lean-forward="false" selection-start-line="31" selection-start-column="117" selection-end-line="31" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Charge.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="40" column="201" lean-forward="false" selection-start-line="40" selection-start-column="201" selection-end-line="40" selection-end-column="201" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Poste.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="42" column="165" lean-forward="false" selection-start-line="42" selection-start-column="165" selection-end-line="42" selection-end-column="165" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fiche/editDelegation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fiche/createDelegation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fiche/editArrondissement.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fiche/showPosteDeTravail.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/PosteDeTravail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="37" column="64" lean-forward="false" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
           <folding />
         </state>
       </provider>
@@ -471,186 +815,105 @@
     <entry file="file://$PROJECT_DIR$/templates/fiche/createArrondissement.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="14" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche/createPoste.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/fiche/showArrondissement.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche/createPartResponsablePaiement.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche/createDelegation.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche/createEmploye.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="65" lean-forward="false" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche/createBanque.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche/createCharge.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche/createSalaire.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/fiche/rechArrondissement.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="14" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fiche/showDelegation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="55" lean-forward="false" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Employe.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/LogController.php" />
+    <entry file="file://$PROJECT_DIR$/src/Entity/Arrondissement.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="86" column="13" lean-forward="false" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="31" />
+        <state relative-caret-position="544">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/PartResponsablePayement.php">
+    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="28" />
+        <state relative-caret-position="952">
+          <caret line="59" column="20" lean-forward="false" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Delegation.php">
+    <entry file="file://$PROJECT_DIR$/src/Service/UserLog.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche/createPosteDeTravail.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/PosteDeTravail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Banque.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Poste.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Charge.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Rappel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/AttestationTravail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche/createAttestationTravail.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche/createAttestationArretTravail.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="53" column="53" lean-forward="false" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/AttestationArretTravail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="28" />
+        <state relative-caret-position="136">
+          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/FicheController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="414" column="86" lean-forward="true" selection-start-line="414" selection-start-column="86" selection-end-line="414" selection-end-column="86" />
+        <state relative-caret-position="30583">
+          <caret line="1861" column="42" lean-forward="false" selection-start-line="1861" selection-start-column="42" selection-end-line="1861" selection-end-column="42" />
           <folding>
             <element signature="e#34#64#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Delegation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EventListener/DatabaseActivitySubscriber.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="92" column="56" lean-forward="false" selection-start-line="92" selection-start-column="56" selection-end-line="92" selection-end-column="56" />
+          <folding>
+            <element signature="e#119#149#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SecurityContollerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

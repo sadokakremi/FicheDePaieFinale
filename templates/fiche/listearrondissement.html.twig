@@ -1,0 +1,33 @@
+
+
+{% block body %}
+<h1 align="center">Liste des arrondissements</h1>
+
+
+
+
+    <h1>Arrondissement </h1>
+
+    <table  id="arrondissement_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom_arrondissement</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for arrondissement in arrondissements %}
+            <tr>
+                <td>{{ arrondissement.id }}</td>
+                <td>{{ arrondissement.nomArrondissement }}</td>
+
+
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+
+{% endblock %}
+

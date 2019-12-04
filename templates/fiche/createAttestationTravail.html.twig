@@ -3,6 +3,7 @@
 {% form_theme formAttestationTravail 'bootstrap_4_layout.html.twig' %}
 
 {% block body %}
+    {% if app.user %}
 
     <h1>Definir Attestation De Travail</h1>
 
@@ -12,6 +13,16 @@
     <button type="submit" class="btn btn-success">Valider Attestation De Travail</button>
 
     {{ form_end(formAttestationTravail) }}
+
+    {% else %}
+        <h2>Veuillez vous connecter</h2>
+        <a href="/connexion" class="btn btn-primary">
+            Connexion
+        </a>
+
+    {% endif %}
+    <a href="{{ path('attestationTravail_index') }}">retour à la liste</a>
+
 
 
 {% endblock %}

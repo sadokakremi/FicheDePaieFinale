@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+        <script type="text/javascript" async="" src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
         {% block stylesheets %}{% endblock %}
 
     </head>
@@ -16,48 +19,51 @@
 
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/fiche/nouveauarrondissement">Arrondissements <span class="sr-only">(current)</span></a>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/fiche/nouveauarrondissement">Arrondissements</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/fiche/salaire">Salaire <span class="sr-only">(current)</span></a>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/fiche/salaire">Salaire </a>
                 </li>
 
-                <li class="nav-item active">
-                    <a class="nav-link" href="/fiche/employe">Employe <span class="sr-only">(current)</span></a>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/fiche/employe">Employe </a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/fiche/partiresponsablepayement">Parti responsable paiement <span class="sr-only">(current)</span></a>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/fiche/partiresponsablepayement">Parti responsable paiement </a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/fiche/delegation">Delegations <span class="sr-only">(current)</span></a>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/fiche/delegation">Delegations</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/fiche/postetravail">Poste de travail <span class="sr-only">(current)</span></a>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/fiche/postetravail">Poste de travail</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/fiche/banque">Banque <span class="sr-only">(current)</span></a>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/fiche/banque">Banque</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/fiche/poste">Poste <span class="sr-only">(current)</span></a>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/fiche/poste">Poste</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/fiche/charges">Charges <span class="sr-only">(current)</span></a>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/fiche/rappel">Rappel </a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/fiche/rappel">Rappel <span class="sr-only">(current)</span></a>
+
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="/connexion">Connexion </a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/fiche/attestationtravail">Attestation de travail <span class="sr-only">(current)</span></a>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/deconnexion">Déconnexion </a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/fiche/attestationarrettravail">Attestation d'arret de travail <span class="sr-only">(current)</span></a>
-                </li>
+
             </ul>
 
         </div>
     </nav>
     <div class="container">
+        {{ render(controller(
+            'App\\Controller\\SearchController::searchBar'
+        )) }}
         {% block body %}{% endblock %}
 
     </div>

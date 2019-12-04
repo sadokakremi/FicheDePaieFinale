@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Parti Responsable Paiement {% endblock %}
+
+{% block body %}
+
+
+    <h1>Parti Responsable Paiement </h1>
+
+    <table id="part_responsable_payement_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom_Banque</th>
+            <th>Nom_Poste</th>
+            <th>Nom_Employeur</th>
+            <th>Adresse_Employeur</th>
+            <th>Telephone_Employeur</th>
+            <th>Email_Employeur</th>
+
+
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for part_responsable_payement in part_responsable_payements %}
+            <tr>
+                <td>{{ part_responsable_payement.id }}</td>
+                <td>{{ part_responsable_payement.banque.nom_banque }}</td>
+                <td>{{ part_responsable_payement.poste.nom_poste }}</td>
+                <td>{{ part_responsable_payement.nomEmployeur }}</td>
+                <td>{{ part_responsable_payement.adresseEmployeur }}</td>
+                <td>{{ part_responsable_payement.telephoneEmployeur }}</td>
+                <td>{{ part_responsable_payement.emailEmployeur }}</td>
+                <td>
+                    <a href="{{ path('fiche_showPartResponsablePaiement', {'id': part_responsable_payement.id}) }}">afficher</a>
+                    <a href="{{ path('partResponsablePayement_edit', {'id': part_responsable_payement.id}) }}">modifier</a>
+                    <a href="{{ path('fiche_deletePartResponsablePayement', {'id': part_responsable_payement.id}) }}">supprimer</a>
+
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">rien</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('partiresponsablepayement_create') }}">Ajouter Parti Responsable Paiement  </a>
+    <a href="{{ path('PartResponsablePaiement_liste') }}">Imprimer Parti Responsable Paiement  </a>
+
+
+{% endblock %}
+{% block javascripts %}
+    <script>
+
+        $(document).ready( function () {
+            $('#part_responsable_payement_Datatable').DataTable();
+        } );
+    </script>
+{% endblock %}

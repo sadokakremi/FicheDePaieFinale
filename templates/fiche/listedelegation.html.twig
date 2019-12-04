@@ -1,0 +1,30 @@
+
+
+{% block body %}
+
+
+    <h1>Delegation </h1>
+
+    <table id="delegation_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom_arrondissement</th>
+            <th>Nom_delegation</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for delegation in delegations %}
+            <tr>
+                <td>{{ delegation.id }}</td>
+                <td>{{ delegation.arrondissement.nom_arrondissement }}</td>
+                <td>{{ delegation.nomDelegation }}</td>
+
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
+

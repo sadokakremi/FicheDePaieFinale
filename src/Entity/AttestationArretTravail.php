@@ -31,6 +31,53 @@ class AttestationArretTravail
      */
     private $condition_arret;
 
+    /**
+     * @ORM\OneToOne(targetEntity="App\Entity\Employe", cascade={"persist", "remove"})
+     */
+    private $employe;
+
+    /**
+     * @ORM\OneToOne(targetEntity="App\Entity\PartResponsablePayement", cascade={"persist", "remove"})
+     */
+    private $partresponsablepayement;
+
+    public function __toText()
+    {
+        return 'id'. $this->id.'  '.'date_saisie'.' '.$this->date_saisie.'  '.'date_arret'.' '.$this->date_arret.'  '.'condition_arret'.' '.$this->condition_arret;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEmploye()
+    {
+        return $this->employe;
+    }
+
+    /**
+     * @param mixed $employe
+     */
+    public function setEmploye($employe)
+    {
+        $this->employe = $employe;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPartresponsablepayement()
+    {
+        return $this->partresponsablepayement;
+    }
+
+    /**
+     * @param mixed $partresponsablepayement
+     */
+    public function setPartresponsablepayement($partresponsablepayement)
+    {
+        $this->partresponsablepayement = $partresponsablepayement;
+    }
+
     public function getId(): ?int
     {
         return $this->id;

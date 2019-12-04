@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+    <h1>Attestation Arret De Travail</h1>
+
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ attestationArretTravail.id }}</td>
+        </tr>
+        <tr>
+        <td>{{ attestationArretTravail.employe.nom }}</td>
+        </tr>
+        <tr>
+        <td>{{ attestationArretTravail.partresponsablepayement.nom_employeur }}</td>
+        </tr>
+        <tr>
+            <th>Date_saisie</th>
+            <td>{{ attestationArretTravail.dateSaisie ? attestationArretTravail.dateSaisie|date('Y-m-d H:i:s') : '' }}</td>
+        </tr>
+        <tr>
+            <th>Date_arret</th>
+            <td>{{ attestationArretTravail.dateArret ? attestationArretTravail.dateArret|date('Y-m-d H:i:s') : '' }}</td>
+        </tr>
+        <tr>
+            <th>Condition_arret</th>
+            <td>{{ attestationArretTravail.conditionArret }}</td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
+    <a href="{{ path('attestationArretTravail_index') }}">retour à la liste</a>
+
+    <a href="{{ path('attestationarrettravail_edit', {'id': attestationArretTravail.id}) }}">modifier</a>
+
+    <form method="post" action="{{ path('fiche_deleteAttestationArretTravail', {'id': attestationArretTravail.id}) }}" onsubmit="return confirm('Êtes-vous sûr ');">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ attestationArretTravail.id) }}">
+        <button class="btn btn-danger">Supprimer</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

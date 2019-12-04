@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}PosteDeTravail {% endblock %}
+
+{% block body %}
+
+
+    <h1>PosteDeTravail </h1>
+
+    <table id="poste_de_travail_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Arrondissement</th>
+            <th>Delegation</th>
+            <th>Adresse</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for poste_de_travail in poste_de_travails %}
+            <tr>
+                <td>{{ poste_de_travail.id }}</td>
+                <td>{{ poste_de_travail.arrondissement.nom_arrondissement }}</td>
+                <td>{{ poste_de_travail.delegation.nom_delegation }}</td>
+                <td>{{ poste_de_travail.adresse }}</td>
+
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+
+{% endblock %}

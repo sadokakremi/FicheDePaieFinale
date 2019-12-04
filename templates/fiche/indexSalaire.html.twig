@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Salaire {% endblock %}
+
+{% block body %}
+
+
+    <h1>Salaire </h1>
+
+    <table id="salaire_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Type_de_paiement</th>
+            <th>Categorie_salaire</th>
+            <th>Montant_salaire</th>
+            <th>Date_attribution_salaire</th>
+            <th>Nbre_heures_travail</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for salaire in salaires %}
+            <tr>
+                <td>{{ salaire.id }}</td>
+                <td>{{ salaire.typeDePaiement }}</td>
+                <td>{{ salaire.categorieSalaire }}</td>
+                <td>{{ salaire.montantSalaire }}</td>
+                <td>{{ salaire.dateAttributionSalaire ? salaire.dateAttributionSalaire|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ salaire.nbreHeuresTravail }}</td>
+                <td>
+                    <a href="{{ path('fiche_showSalaire', {'id': salaire.id}) }}">afficher</a>
+                    <a href="{{ path('salaire_edit', {'id': salaire.id}) }}">modifier</a>
+                    <a href="{{ path('fiche_deleteSalaire', {'id': salaire.id}) }}">supprimer</a>
+
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">rien</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('salaire_create') }}">Ajouter Salaire</a>
+{% endblock %}
+{% block javascripts %}
+    <script>
+
+        $(document).ready( function () {
+            $('#salaire_Datatable').DataTable();
+        } );
+    </script>
+{% endblock %}

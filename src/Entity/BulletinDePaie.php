@@ -20,11 +20,17 @@ class BulletinDePaie
      * @ORM\Column(type="datetime")
      */
     private $date_saisie;
+    
 
     /**
      * @ORM\Column(type="datetime")
      */
     private $date_demande;
+
+    public function __toText()
+    {
+        return 'id'. $this->id.'  '.'date_saisie'.' '.$this->date_saisie.'  '.'date_demande'.' '.$this->date_demande;
+    }
 
     public function getId(): ?int
     {

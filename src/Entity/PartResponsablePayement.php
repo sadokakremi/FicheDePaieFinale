@@ -5,6 +5,7 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PartResponsablePayementRepository")
@@ -21,7 +22,7 @@ class PartResponsablePayement
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $nom_employeur;
+    public $nom_employeur;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -29,12 +30,13 @@ class PartResponsablePayement
     private $adresse_employeur;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="integer")
      */
     private $telephone_employeur;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Email()
      */
     private $email_employeur;
 
@@ -45,14 +47,18 @@ class PartResponsablePayement
     private $banque;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Poste", mappedBy="paiement")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Poste", inversedBy="payement")
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $postes;
 
-    public function __construct()
+    private $poste;
+
+    public function __toText()
     {
-        $this->postes = new ArrayCollection();
+        return 'id'. $this->id.'  '.'nom_employeur'.' '.$this->nom_employeur.'  '.'adresse_employeur'.' '.$this->adresse_employeur.'  '.'telephone_employeur'.' '.$this->telephone_employeur.'  '.'email_employeur'.' '.$this->email_employeur;
     }
+
+
 
     public function getId(): ?int
     {
@@ -119,31 +125,20 @@ class PartResponsablePayement
         return $this;
     }
 
-    /**
-     * @return Collection|Poste[]
-     */
-    public function getPostes(): Collection
+    public function getPoste(): ?Poste
     {
-        return $this->postes;
+        return $this->poste;
     }
 
-    public function addPoste(Poste $poste): self
+    public function setPoste(?Poste $poste): self
     {
-        if (!$this->postes->contains($poste)) {
-            $this->postes[] = $poste;
-            $poste->addPaiement($this);
-        }
+        $this->poste = $poste;
 
         return $this;
     }
 
-    public function removePoste(Poste $poste): self
-    {
-        if ($this->postes->contains($poste)) {
-            $this->postes->removeElement($poste);
-            $poste->removePaiement($this);
-        }
 
-        return $this;
-    }
+
+
+
 }

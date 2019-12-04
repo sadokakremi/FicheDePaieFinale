@@ -3,6 +3,7 @@
 {% form_theme formEmploye 'bootstrap_4_layout.html.twig' %}
 
 {% block body %}
+    {% if app.user %}
 
     <h1>Definir Employe</h1>
 
@@ -12,6 +13,16 @@
     <button type="submit" class="btn btn-success">Valider Employe</button>
 
     {{ form_end(formEmploye) }}
+
+    {% else %}
+        <h2>Veuillez vous connecter</h2>
+        <a href="/connexion" class="btn btn-primary">
+            Connexion
+        </a>
+
+    {% endif %}
+    <a href="{{ path('employe_index') }}">retour à la liste</a>
+
 
 
 {% endblock %}

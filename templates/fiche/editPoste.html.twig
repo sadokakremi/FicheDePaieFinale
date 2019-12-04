@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier Poste{% endblock %}
+
+{% block body %}
+    <h1>Modifier Poste</h1>
+    {{ form_start(formPoste) }}
+    {{ form_widget(formPoste) }}
+
+    {{ include('fiche/formPoste.html.twig', {'button_label': 'Modifier'}) }}
+    {{ form_end(formPoste) }}
+
+    <a href="{{ path('poste_index') }}">retour à la liste</a>
+
+
+
+{% endblock %}

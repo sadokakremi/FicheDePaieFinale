@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}PosteDeTravail {% endblock %}
+
+{% block body %}
+
+
+    <h1>PosteDeTravail </h1>
+
+    <table id="poste_de_travail_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Arrondissement</th>
+            <th>Delegation</th>
+            <th>Adresse</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for poste_de_travail in poste_de_travails %}
+            <tr>
+                <td>{{ poste_de_travail.id }}</td>
+                <td>{{ poste_de_travail.arrondissement.nom_arrondissement }}</td>
+                <td>{{ poste_de_travail.delegation.nom_delegation }}</td>
+                <td>{{ poste_de_travail.adresse }}</td>
+                <td>
+                    <a href="{{ path('fiche_showPosteDeTravail', {'id': poste_de_travail.id}) }}">afficher</a>
+                    <a href="{{ path('posteDeTravail_edit', {'id': poste_de_travail.id}) }}">modifier</a>
+                    <a href="{{ path('fiche_deletePosteDeTravail', {'id': poste_de_travail.id}) }}">supprimer</a>
+
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">rien</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('postetravail_create') }}">Ajouter Poste De Travail</a>
+    <a href="{{ path('postetravail_liste') }}">Imprimer Poste De Travail</a>
+
+{% endblock %}
+{% block javascripts %}
+    <script>
+
+        $(document).ready( function () {
+            $('#poste_de_travail_Datatable').DataTable();
+        } );
+    </script>
+{% endblock %}

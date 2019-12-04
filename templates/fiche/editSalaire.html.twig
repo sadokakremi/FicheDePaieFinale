@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier Salaire{% endblock %}
+
+{% block body %}
+    <h1>Modifier Salaire</h1>
+    {{ form_start(formSalaire) }}
+    {{ form_widget(formSalaire) }}
+
+    {{ include('fiche/formSalaire.html.twig', {'button_label': 'Modifier'}) }}
+    {{ form_end(formSalaire) }}
+
+    <a href="{{ path('salaire_index') }}">retour à la liste</a>
+
+
+
+{% endblock %}

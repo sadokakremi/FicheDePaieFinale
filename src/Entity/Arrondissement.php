@@ -21,12 +21,24 @@ class Arrondissement
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $nom_arrondissement;
+    public $nom_arrondissement;
+
+
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Delegation", mappedBy="delegations")
      */
     private $delegations;
+
+
+
+
+
+    public function __toText()
+    {
+        return 'id'. $this->id.'  '.'nom_arrondissement'.' '.$this->nom_arrondissement;
+    }
+
 
     public function __construct()
     {

@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Poste {% endblock %}
+
+{% block body %}
+
+
+    <h1>Poste </h1>
+
+    <table id="poste_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom_poste</th>
+            <th>Adresse_poste</th>
+            <th>Telephone_poste</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for poste in postes %}
+            <tr>
+                <td>{{ poste.id }}</td>
+                <td>{{ poste.nomPoste }}</td>
+                <td>{{ poste.adressePoste }}</td>
+                <td>{{ poste.telephonePoste }}</td>
+                <td>
+                    <a href="{{ path('fiche_showPoste', {'id': poste.id}) }}">afficher</a>
+                    <a href="{{ path('poste_edit', {'id': poste.id}) }}">modifier</a>
+                    <a href="{{ path('fiche_deletePoste', {'id': poste.id}) }}">supprimer</a>
+
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">rien</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('poste_create') }}">Ajouter Poste</a>
+
+    <a href="{{ path('poste_liste') }}">Imprimer Poste</a>
+
+{% endblock %}
+{% block javascripts %}
+    <script>
+
+        $(document).ready( function () {
+            $('#poste_Datatable').DataTable();
+        } );
+    </script>
+{% endblock %}

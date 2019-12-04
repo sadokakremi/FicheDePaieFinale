@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Arrondissement{% endblock %}
+
+{% block body %}
+    <h1>Arrondissement</h1>
+
+    <table class="table table-bordered table-striped">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ arrondissement.id }}</td>
+        </tr>
+        <tr>
+            <th>Nom_arrondissement</th>
+            <td>{{ arrondissement.nomArrondissement }}</td>
+        </tr>
+
+        <tr class="active"> <td> {{ arrondissement.id }} </td><td>{{ arrondissement.nomArrondissement }}</td>
+        </tbody>
+    </table>
+
+
+    <a href="{{ path('arrondissement_index') }}">retour à la liste</a>
+
+    <a href="{{ path('arrondissement_edit', {'id': arrondissement.id}) }}">modifier</a>
+
+
+    <form method="post" action="{{ path('fiche_deleteArrondissement', {'id': arrondissement.id}) }}" onsubmit="return confirm('Êtes-vous sûr ');">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ arrondissement.id) }}">
+        <button class="btn btn-danger">Supprimer</button>
+    </form>
+
+
+{% endblock %}

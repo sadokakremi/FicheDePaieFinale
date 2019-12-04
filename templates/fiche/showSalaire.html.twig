@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1>Details du salaire</h1>
+
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ salaire.id }}</td>
+        </tr>
+        <tr>
+            <th>Type_de_paiement</th>
+            <td>{{ salaire.typedepaiement }}</td>
+        </tr>
+        <tr>
+            <th>Categorie_salaire</th>
+            <td>{{ salaire.categoriesalaire }}</td>
+        </tr>
+        <tr>
+            <th>Montant_salaire</th>
+            <td>{{ salaire.montantsalaire }}</td>
+        </tr>
+        <tr>
+            <th>Date_attribution_salaire</th>
+            <td>{{ salaire.dateattributionsalaire ? salaire.dateattributionsalaire|date('Y-m-d H:i:s') : '' }}</td>
+        </tr>
+        <tr>
+            <th>Nbre_heures_travail</th>
+            <td>{{ salaire.nbreheurestravail }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <a href="{{ path('salaire_index') }}">retour à la liste</a>
+
+    <a href="{{ path('salaire_edit', {'id': salaire.id}) }}">modifier</a>
+
+
+    <form method="post" action="{{ path('fiche_deleteSalaire', {'id': salaire.id}) }}" onsubmit="return confirm('Êtes-vous sûr ');">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ salaire.id) }}">
+        <button class="btn btn-danger">Supprimer</button>
+    </form>
+
+
+
+
+
+
+
+
+
+{% endblock %}

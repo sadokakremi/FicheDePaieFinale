@@ -1,0 +1,34 @@
+
+
+{% block body %}
+
+
+    <h1>Banque </h1>
+
+    <table id="banque_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom_banque</th>
+            <th>Adresse_banque</th>
+            <th>Telephone_banque</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for banque in banques %}
+            <tr>
+                <td>{{ banque.id }}</td>
+                <td>{{ banque.nomBanque }}</td>
+                <td>{{ banque.adresseBanque }}</td>
+                <td>{{ banque.telephoneBanque }}</td>
+
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+
+{% endblock %}

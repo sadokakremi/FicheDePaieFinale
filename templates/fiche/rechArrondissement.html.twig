@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <table class="table table-bordered table-striped">
+
+
+    {% for Arrondissement in rechArrondissement %}
+        <tr class="active"> <td> {{ arrondissement.id }} </td><td> {{ arrondissement.nomArrondissement }} </td> <td> <a href="{{ path('arrondissement_index') }}" class="btn btn-info">liste</a> </td> <td> <a href="{{ path('arrondissement_edit',{'id': arrondissement.id}) }}" class="btn btn-primary">Modifier</a> </td> <td> <a href="{{ path('fiche_deleteArrondissement',{'id': arrondissement.id}) }}" class="btn btn-primary">supprimer</a> </td>  </tr>
+    {% endfor %}
+    </table>
+
+
+
+
+{% endblock %}
+
+
+{% endblock %}

@@ -21,7 +21,7 @@ class Poste
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $nom_poste;
+    public $nom_poste;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -29,7 +29,7 @@ class Poste
     private $adresse_poste;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="integer")
      */
     private $telephone_poste;
 
@@ -37,6 +37,11 @@ class Poste
      * @ORM\ManyToMany(targetEntity="App\Entity\PartResponsablePayement", inversedBy="postes")
      */
     private $paiement;
+
+    public function __toText()
+    {
+        return 'id'. $this->id.'  '.'nom_poste'.' '.$this->nom_poste.'  '.'adresse_poste'.' '.$this->adresse_poste.'  '.'telephone_poste'.' '.$this->telephone_poste;
+    }
 
     public function __construct()
     {

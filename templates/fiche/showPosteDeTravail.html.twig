@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <h1>Poste De Travail</h1>
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ posteDeTravail.id }}</td>
+        </tr>
+        <tr>
+            <th>Arrondissement</th>
+            <td>{{ posteDeTravail.arrondissement.nom_arrondissement }}</td>
+        </tr>
+        <tr>
+            <th>Delegation</th>
+            <td>{{ posteDeTravail.delegation.nom_delegation }}</td>
+        </tr>
+        <tr>
+            <th>Adresse</th>
+            <td>{{ posteDeTravail.adresse }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <a href="{{ path('posteDeTravail_index') }}">retour à la liste</a>
+
+    <a href="{{ path('posteDeTravail_edit', {'id': posteDeTravail.id}) }}">modifier</a>
+
+    <form method="post" action="{{ path('fiche_deletePosteDeTravail', {'id': posteDeTravail.id}) }}" onsubmit="return confirm('Êtes-vous sûr ');">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ posteDeTravail.id) }}">
+        <button class="btn btn-danger">Supprimer</button>
+    </form>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}AttestationArretTravail {% endblock %}
+
+{% block body %}
+
+
+
+
+    <h1>AttestationArretTravail </h1>
+
+    <table id="attestation_arret_travail_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Date_saisie</th>
+            <th>Date_arret</th>
+            <th>Condition_arret</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for attestation_arret_travail in attestation_arret_travails %}
+            <tr>
+                <td>{{ attestation_arret_travail.id }}</td>
+                <td>{{ attestation_arret_travail.employe.nom }}</td>
+                <td>{{ attestation_arret_travail.partresponsablepayement.nom_employeur }}</td>
+                <td>{{ attestation_arret_travail.dateSaisie ? attestation_arret_travail.dateSaisie|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ attestation_arret_travail.dateArret ? attestation_arret_travail.dateArret|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ attestation_arret_travail.conditionArret }}</td>
+                <td>
+                    <a href="{{ path('fiche_showAttestationArretTravail', {'id': attestation_arret_travail.id}) }}">afficher</a>
+                    <a href="{{ path('attestationarrettravail_edit', {'id': attestation_arret_travail.id}) }}">modifier</a>
+                    <a href="{{ path('fiche_deleteAttestationArretTravail', {'id': attestation_arret_travail.id}) }}">supprimer</a>
+
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">rien</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('attestationarrettravail_create') }}">Ajouter Attestation Arret De Travail</a>
+{% endblock %}
+{% block javascripts %}
+    <script>
+
+        $(document).ready( function () {
+            $('#attestation_arret_travail_Datatable').DataTable();
+        } );
+    </script>
+{% endblock %}

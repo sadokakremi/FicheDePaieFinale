@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Delegation {% endblock %}
+
+{% block body %}
+
+
+    <h1>Delegation </h1>
+
+    <table id="delegation_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom_arrondissement</th>
+            <th>Nom_delegation</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for delegation in delegations %}
+            <tr>
+                <td>{{ delegation.id }}</td>
+                <td>{{ delegation.arrondissement.nom_arrondissement }}</td>
+                <td>{{ delegation.nomDelegation }}</td>
+                <td>
+                    <a href="{{ path('fiche_showDelegation', {'id': delegation.id}) }}">afficher</a>
+                    <a href="{{ path('delegation_edit', {'id': delegation.id}) }}">modifier</a>
+                    <a href="{{ path('fiche_deleteDelegation', {'id': delegation.id}) }}">supprimer</a>
+
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">rien</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('delegation_create') }}">Ajouter Delegation</a>
+    <a href="{{ path('delegation_liste') }}">Imprimer Delegation</a>
+
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+
+        $(document).ready( function () {
+            $('#delegation_Datatable').DataTable();
+        } );
+    </script>
+{% endblock %}

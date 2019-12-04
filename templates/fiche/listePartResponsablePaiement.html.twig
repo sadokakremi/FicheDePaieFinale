@@ -1,0 +1,41 @@
+
+
+{% block body %}
+
+
+    <h1>Parti Responsable Paiement </h1>
+
+    <table id="part_responsable_payement_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom_Banque</th>
+            <th>Nom_Poste</th>
+            <th>Nom_Employeur</th>
+            <th>Adresse_Employeur</th>
+            <th>Telephone_Employeur</th>
+            <th>Email_Employeur</th>
+
+
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for part_responsable_payement in part_responsable_payements %}
+            <tr>
+                <td>{{ part_responsable_payement.id }}</td>
+                <td>{{ part_responsable_payement.banque.nom_banque }}</td>
+                <td>{{ part_responsable_payement.poste.nom_poste }}</td>
+                <td>{{ part_responsable_payement.nomEmployeur }}</td>
+                <td>{{ part_responsable_payement.adresseEmployeur }}</td>
+                <td>{{ part_responsable_payement.telephoneEmployeur }}</td>
+                <td>{{ part_responsable_payement.emailEmployeur }}</td>
+                <td>
+
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

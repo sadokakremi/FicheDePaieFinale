@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Attestation De Travail {% endblock %}
+
+{% block body %}
+
+
+
+
+    <h1>Attestation De Travail </h1>
+
+    <table id="attestation_travail_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>employe</th>
+            <th>partie</th>
+            <th>Date_impression</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for attestation_travail in attestation_travails %}
+            <tr>
+                <td>{{ attestation_travail.id }}</td>
+                <td>{{ attestation_travail.employe }}</td>
+                <td>{{ attestation_travail.partresponsablepayement.nom_employeur }}</td>
+                <td>{{ attestation_travail.dateImpression ? attestation_travail.dateImpression|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('fiche_showAttestationTravail', {'id': attestation_travail.id}) }}">afficher</a>
+                    <a href="{{ path('attestationTravail_edit', {'id': attestation_travail.id}) }}">modifier</a>
+                    <a href="{{ path('fiche_deleteAttestationTravail', {'id': attestation_travail.id}) }}">supprimer</a>
+
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">rien</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('attestationtravail_create') }}">Ajouter Attestation De Travail</a>
+{% endblock %}
+{% block javascripts %}
+    <script>
+
+        $(document).ready( function () {
+            $('#attestation_travail_Datatable').DataTable();
+        } );
+    </script>
+{% endblock %}

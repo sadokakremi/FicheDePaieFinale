@@ -22,19 +22,24 @@ class Charge
     private $date;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="float")
      */
     private $charge_cnss_patron;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="float")
      */
     private $charge_cnss_employe;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="float")
      */
     private $taxe;
+
+    public function __toText()
+    {
+        return 'id'. $this->id.'  '.'date'.' '.$this->date.'  '.'charge_cnss_patron'.' '.$this->charge_cnss_patron.'  '.'charge_cnss_employe'.' '.$this->charge_cnss_employe.'  '.'taxe'.' '.$this->taxe;
+    }
 
     public function getId(): ?int
     {

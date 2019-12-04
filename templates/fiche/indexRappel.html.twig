@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Rappel {% endblock %}
+
+{% block body %}
+
+
+    <h1>Rappel </h1>
+
+    <table id="rappel_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Date_saisie</th>
+            <th>Espace_temps_requis</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for rappel in rappels %}
+            <tr>
+                <td>{{ rappel.id }}</td>
+                <td>{{ rappel.dateSaisie ? rappel.dateSaisie|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ rappel.espaceTempsRequis ? rappel.espaceTempsRequis|date('Y-m-d') : '' }}</td>
+                <td>
+                    <a href="{{ path('fiche_showRappel', {'id': rappel.id}) }}">afficher</a>
+                    <a href="{{ path('rappel_edit', {'id': rappel.id}) }}">modifier</a>
+                    <a href="{{ path('fiche_deleteRappel', {'id': rappel.id}) }}">supprimer</a>
+
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">rien</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('rappel_create') }}">Ajouter Rappel</a>
+{% endblock %}
+{% block javascripts %}
+    <script>
+
+        $(document).ready( function () {
+            $('#rappel_Datatable').DataTable();
+        } );
+    </script>
+{% endblock %}

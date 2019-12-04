@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Banque {% endblock %}
+
+{% block body %}
+
+
+    <h1>Banque </h1>
+
+    <table id="banque_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom_banque</th>
+            <th>Adresse_banque</th>
+            <th>Telephone_banque</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for banque in banques %}
+            <tr>
+                <td>{{ banque.id }}</td>
+                <td>{{ banque.nomBanque }}</td>
+                <td>{{ banque.adresseBanque }}</td>
+                <td>{{ banque.telephoneBanque }}</td>
+                <td>
+                    <a href="{{ path('fiche_showBanque', {'id': banque.id}) }}">afficher</a>
+                    <a href="{{ path('banque_edit', {'id': banque.id}) }}">modifier</a>
+                    <a href="{{ path('fiche_deleteBanque', {'id': banque.id}) }}">supprimer</a>
+
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">rien</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('banque_create') }}">Ajouter Banque</a>
+
+    <a href="{{ path('banque_liste') }}">Imprimer Banque</a>
+
+{% endblock %}
+{% block javascripts %}
+    <script>
+
+        $(document).ready( function () {
+            $('#banque_Datatable').DataTable();
+        } );
+    </script>
+{% endblock %}

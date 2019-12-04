@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+    <h1>Les données de l'employé</h1>
+
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ employe.id }}</td>
+        </tr>
+        <tr>
+            <th>Cin</th>
+            <td>{{ employe.cin }}</td>
+        </tr>
+        <tr>
+            <th>Cnss</th>
+            <td>{{ employe.cnss }}</td>
+        </tr>
+        <tr>
+            <th>Nom</th>
+            <td>{{ employe.nom }}</td>
+        </tr>
+        <tr>
+            <th>Prenom</th>
+            <td>{{ employe.prenom }}</td>
+        </tr>
+        <tr>
+            <th>Lieu_de_naissance</th>
+            <td>{{ employe.lieudenaissance }}</td>
+        </tr>
+        <tr>
+            <th>Statut_familial</th>
+            <td>{{ employe.statutfamilial }}</td>
+        </tr>
+        <tr>
+            <th>Adresse</th>
+            <td>{{ employe.adresse }}</td>
+        </tr>
+        <tr>
+            <th>Matricule</th>
+            <td>{{ employe.matricule }}</td>
+        </tr>
+        <tr>
+            <th>Telephone</th>
+            <td>{{ employe.telephone }}</td>
+        </tr>
+        <tr>
+            <th>Diplome</th>
+            <td>{{ employe.diplome }}</td>
+        </tr>
+        <tr>
+            <th>Niveau_scolaire</th>
+            <td>{{ employe.niveauscolaire }}</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>{{ employe.age }}</td>
+        </tr>
+        <tr>
+            <th>Date_de_naissance</th>
+            <td>{{ employe.datedenaissance ? employe.datedenaissance|date('Y-m-d') : '' }}</td>
+        </tr>
+        <tr>
+            <th>Date_debut_travail</th>
+            <td>{{ employe.datedebuttravail ? employe.datedebuttravail|date('Y-m-d') : '' }}</td>
+        </tr>
+        <tr>
+            <th>CreatedAt</th>
+            <td>{{ employe.createdAt ? employe.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <a href="{{ path('employe_index') }}">retour à la liste</a>
+
+    <a href="{{ path('employe_edit', {'id': employe.id}) }}">modifier</a>
+
+
+    <form method="post" action="{{ path('fiche_deleteEmploye', {'id': employe.id}) }}" onsubmit="return confirm('Êtes-vous sûr ');">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ employe.id) }}">
+        <button class="btn btn-danger">Supprimer</button>
+    </form>
+
+
+
+
+
+
+
+
+
+{% endblock %}

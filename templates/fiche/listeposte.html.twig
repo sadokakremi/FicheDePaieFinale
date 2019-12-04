@@ -1,0 +1,34 @@
+
+
+{% block body %}
+
+
+    <h1>Poste </h1>
+
+    <table id="poste_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom_poste</th>
+            <th>Adresse_poste</th>
+            <th>Telephone_poste</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for poste in postes %}
+            <tr>
+                <td>{{ poste.id }}</td>
+                <td>{{ poste.nomPoste }}</td>
+                <td>{{ poste.adressePoste }}</td>
+                <td>{{ poste.telephonePoste }}</td>
+
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}
+

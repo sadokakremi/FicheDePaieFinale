@@ -21,6 +21,54 @@ class AttestationTravail
      */
     private $date_impression;
 
+    /**
+     * @ORM\OneToOne(targetEntity="App\Entity\Employe", cascade={"persist", "remove"})
+     */
+    private $employe;
+
+    /**
+     * @ORM\OneToOne(targetEntity="App\Entity\PartResponsablePayement", cascade={"persist", "remove"})
+     */
+    public $partresponsablepayement;
+
+    public function __toText()
+    {
+        return 'id'. $this->id.'  '.'date_impression'.' '.$this->date_impression;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPartresponsablepayement()
+    {
+        return $this->partresponsablepayement;
+    }
+
+
+    /**
+     * @param mixed $partresponsablepayement
+     */
+    public function setPartresponsablepayement($partresponsablepayement)
+    {
+        $this->partresponsablepayement = $partresponsablepayement;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEmploye()
+    {
+        return $this->employe;
+    }
+
+    /**
+     * @param mixed $employe
+     */
+    public function setEmploye($employe)
+    {
+        $this->employe = $employe;
+    }
+
     public function getId(): ?int
     {
         return $this->id;

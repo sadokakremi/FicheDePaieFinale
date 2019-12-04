@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+    <h1>La Banque</h1>
+
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ banque.id }}</td>
+        </tr>
+        <tr>
+            <th>Nom_banque</th>
+            <td>{{ banque.nombanque }}</td>
+        </tr>
+        <tr>
+            <th>Adresse_banque</th>
+            <td>{{ banque.adressebanque }}</td>
+        </tr>
+        <tr>
+            <th>Telephone_banque</th>
+            <td>{{ banque.telephonebanque }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('banque_index') }}">retour à la liste</a>
+
+    <a href="{{ path('banque_edit', {'id': banque.id}) }}">modifier</a>
+
+
+
+    <form method="post" action="{{ path('fiche_deleteBanque', {'id': banque.id}) }}" onsubmit="return confirm('Êtes-vous sûr ');">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ banque.id) }}">
+        <button class="btn btn-danger">Supprimer</button>
+    </form>
+
+
+
+
+
+
+{% endblock %}

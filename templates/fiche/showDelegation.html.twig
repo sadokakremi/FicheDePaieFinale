@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+    <h1>Delegation</h1>
+
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ delegation.id }}</td>
+        </tr>
+        <tr>
+            <th>Nom arrondissement</th>
+            <td>{{ delegation.arrondissement.nom_arrondissement}}</td>
+        </tr>
+        <tr>
+            <th>Nom_delegation</th>
+            <td>{{ delegation.nomdelegation }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <a href="{{ path('delegation_index') }}">retour à la liste</a>
+
+    <a href="{{ path('delegation_edit', {'id': delegation.id}) }}">modifier</a>
+
+    <form method="post" action="{{ path('fiche_deleteDelegation', {'id': delegation.id}) }}" onsubmit="return confirm('Êtes-vous sûr ');">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ delegation.id) }}">
+        <button class="btn btn-danger">Supprimer</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

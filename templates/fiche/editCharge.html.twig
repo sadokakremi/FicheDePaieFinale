@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier Charge{% endblock %}
+
+{% block body %}
+    <h1>Modifier Charge</h1>
+
+    {{ include('fiche/formArrondissement.html.twig', {'button_label': 'Modifier'}) }}
+
+    <a href="{{ path('charge_index') }}">retour à la liste</a>
+
+
+
+{% endblock %}

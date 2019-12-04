@@ -53,6 +53,20 @@ class User implements UserInterface
 
     public $confirm_password;
 
+
+
+
+
+    public function __toString()
+    {
+        return 'user'.$this->getId();
+    }
+
+    public function __toText()
+    {
+        return 'id'. $this->id.'  '.'email'.' '.$this->email.'  '.'nom'.' '.$this->nom;
+    }
+
     public function getId(): ?int
     {
         return $this->id;

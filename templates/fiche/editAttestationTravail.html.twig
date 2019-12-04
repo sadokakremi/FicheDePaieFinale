@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier Attestation De Travail{% endblock %}
+
+{% block body %}
+    <h1>Modifier Attestation De Travail</h1>
+    {{ form_start(formAttestationTravail) }}
+    {{ form_widget(formAttestationTravail) }}
+
+    {{ include('fiche/formAttestationTravail.html.twig', {'button_label': 'Modifier'}) }}
+    {{ form_end(formAttestationTravail) }}
+
+    <a href="{{ path('attestationTravail_index') }}">retour à la liste</a>
+
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <h1>Poste</h1>
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ poste.id }}</td>
+        </tr>
+        <tr>
+            <th>Nom_poste</th>
+            <td>{{ poste.nomposte }}</td>
+        </tr>
+        <tr>
+            <th>Adresse_poste</th>
+            <td>{{ poste.adresseposte }}</td>
+        </tr>
+        <tr>
+            <th>Telephone_poste</th>
+            <td>{{ poste.telephoneposte }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('poste_index') }}">retour à la liste</a>
+
+    <a href="{{ path('poste_edit', {'id': poste.id}) }}">modifier</a>
+
+    <form method="post" action="{{ path('fiche_deletePoste', {'id': poste.id}) }}" onsubmit="return confirm('Êtes-vous sûr ');">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ poste.id) }}">
+        <button class="btn btn-danger">Supprimer</button>
+    </form>
+
+
+{% endblock %}

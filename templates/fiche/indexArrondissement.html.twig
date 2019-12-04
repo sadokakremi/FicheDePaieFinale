@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Arrondissement{% endblock %}
+
+{% block body %}
+
+
+
+
+
+    <h1>Arrondissement </h1>
+
+    <table  id="arrondissement_Datatable">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom_arrondissement</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for arrondissement in arrondissements %}
+            <tr>
+                <td>{{ arrondissement.id }}</td>
+                <td>{{ arrondissement.nomArrondissement }}</td>
+                <td>
+                    <a href="{{ path('fiche_showArrondissement', {'id': arrondissement.id}) }}">afficher</a>
+                    <a href="{{ path('arrondissement_edit', {'id': arrondissement.id}) }}">modifier</a>
+                    <a href="{{ path('fiche_deleteArrondissement', {'id': arrondissement.id}) }}">supprimer</a>
+
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">aucun arrondissement trouvé</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+    <a href="{{ path('arrondissement_create') }}">Ajouter Arrondissement</a>
+    <a href="{{ path('arrondissement_liste') }}">Imprimer liste Arrondissement</a>
+{% endblock %}
+
+ {% block javascripts %}
+ <script>
+
+     $(document).ready( function () {
+         $('#arrondissement_Datatable').DataTable();
+     } );
+ </script>
+ {% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+    <h1>Les Charges</h1>
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ charge.id }}</td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>{{ charge.date ? charge.date|date('Y-m-d H:i:s') : '' }}</td>
+        </tr>
+        <tr>
+            <th>Charge_cnss_patron</th>
+            <td>{{ charge.chargecnsspatron }}</td>
+        </tr>
+        <tr>
+            <th>Charge_cnss_employe</th>
+            <td>{{ charge.chargecnssemploye }}</td>
+        </tr>
+        <tr>
+            <th>Taxe</th>
+            <td>{{ charge.taxe }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+    <a href="{{ path('charge_index') }}">retour à la liste</a>
+
+    <a href="{{ path('charge_edit', {'id': charge.id}) }}">modifier</a>
+
+    <form method="post" action="{{ path('fiche_deleteCharge', {'id': charge.id}) }}" onsubmit="return confirm('Êtes-vous sûr ');">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ charge.id) }}">
+        <button class="btn btn-danger">Supprimer</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

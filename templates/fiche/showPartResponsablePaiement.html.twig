@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <h1>Parti responsable paiement</h1>
+
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ partResponsablePayement.id }}</td>
+        </tr>
+        <tr>
+            <th>Nom_employeur</th>
+            <td>{{ partResponsablePayement.nomemployeur }}</td>
+        </tr>
+        <tr>
+            <th>Nom_banque</th>
+            <td>{{ partResponsablePayement.banque.nom_banque }}</td>
+        </tr>
+        <tr>
+            <th>Nom_poste</th>
+            <td>{{ partResponsablePayement.poste.nom_poste }}</td>
+        </tr>
+        <tr>
+            <th>Adresse_employeur</th>
+            <td>{{ partResponsablePayement.adresseemployeur }}</td>
+        </tr>
+        <tr>
+            <th>Telephone_employeur</th>
+            <td>{{ partResponsablePayement.telephoneemployeur }}</td>
+        </tr>
+        <tr>
+            <th>Email_employeur</th>
+            <td>{{ partResponsablePayement.emailemployeur }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <a href="{{ path('PartResponsablePaiement_index') }}">retour à la liste</a>
+
+    <a href="{{ path('partResponsablePayement_edit', {'id': partResponsablePayement.id}) }}">modifier</a>
+
+    <form method="post" action="{{ path('fiche_deletePartResponsablePayement', {'id': partResponsablePayement.id}) }}" onsubmit="return confirm('Êtes-vous sûr ');">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ partResponsablePayement.id) }}">
+        <button class="btn btn-danger">Supprimer</button>
+    </form>
+
+{% endblock %}

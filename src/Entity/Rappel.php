@@ -26,6 +26,11 @@ class Rappel
      */
     private $espace_temps_requis;
 
+    public function __toText()
+    {
+        return 'id'. $this->id.'  '.'date_saisie'.' '.$this->date_saisie.'  '.'espace_temps_requis'.' '.$this->espace_temps_requis;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
