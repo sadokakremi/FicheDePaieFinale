@@ -2,138 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="703cb4dc-8ad6-493b-91bc-cfbe0299cbff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_20_09_19_01_20_s.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controller/SearchController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Entity/Log.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EventListener/DatabaseActivitySubscriber.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/ArrondissementType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/AttestationArretTravailType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/AttestationTravailType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/BanqueType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/ChargeType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/DelegationType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/EmployeType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/PartResponsablePayementType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/PosteDeTravailType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/PosteType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/RappelType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/Salaire1Type.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/SalaireType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190327090156.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190327100945.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190327104511.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190327113425.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328075623.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328075919.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328080641.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328080844.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328081002.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328081733.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328082143.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190328140541.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190329111228.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190329152359.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190330095520.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190330125505.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190401124308.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190425104723.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Repository/LogRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Service/UserLog.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editArrondissement.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editAttestationArretTravail.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editAttestationTravail.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editBanque.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editCharge.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editDelegation.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editEmploye.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editPartResponsablePaiement.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editPoste.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editPosteDeTravail.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editRappel.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/editSalaire.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formArrondissement.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formAttestationArretTravail.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formAttestationTravail.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formDelegation.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formPartResponsablePaiement.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formPoste.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formPosteDeTravail.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/formSalaire.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexArrondissement.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexAttestationArretTravail.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexAttestationTravail.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexBanque.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexCharge.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexDelegation.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexEmploye.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexPartResponsablePaiement.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexPoste.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexPosteDeTravail.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexRappel.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/indexSalaire.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/listeEmploye.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/listePartResponsablePaiement.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/listePosteDeTravail.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/listearrondissement.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/listebanque.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/listedelegation.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/listeposte.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/rechArrondissement.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showArrondissement.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showAttestationArretTravail.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showAttestationTravail.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showBanque.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showCharge.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showDelegation.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showEmploye.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showPartResponsablePaiement.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showPoste.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showPosteDeTravail.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showRappel.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/showSalaire.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fiche/sym.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/search/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/search/searchBar.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/packages/security.yaml" afterPath="$PROJECT_DIR$/config/packages/security.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/services.yaml" afterPath="$PROJECT_DIR$/config/services.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/FicheController.php" afterPath="$PROJECT_DIR$/src/Controller/FicheController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/SecurityContollerController.php" afterPath="$PROJECT_DIR$/src/Controller/SecurityContollerController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Arrondissement.php" afterPath="$PROJECT_DIR$/src/Entity/Arrondissement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/AttestationArretTravail.php" afterPath="$PROJECT_DIR$/src/Entity/AttestationArretTravail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/AttestationTravail.php" afterPath="$PROJECT_DIR$/src/Entity/AttestationTravail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Banque.php" afterPath="$PROJECT_DIR$/src/Entity/Banque.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/BulletinDePaie.php" afterPath="$PROJECT_DIR$/src/Entity/BulletinDePaie.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Charge.php" afterPath="$PROJECT_DIR$/src/Entity/Charge.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Delegation.php" afterPath="$PROJECT_DIR$/src/Entity/Delegation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Employe.php" afterPath="$PROJECT_DIR$/src/Entity/Employe.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/PartResponsablePayement.php" afterPath="$PROJECT_DIR$/src/Entity/PartResponsablePayement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Poste.php" afterPath="$PROJECT_DIR$/src/Entity/Poste.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/PosteDeTravail.php" afterPath="$PROJECT_DIR$/src/Entity/PosteDeTravail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Rappel.php" afterPath="$PROJECT_DIR$/src/Entity/Rappel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Salaire.php" afterPath="$PROJECT_DIR$/src/Entity/Salaire.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/User.php" afterPath="$PROJECT_DIR$/src/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony.lock" afterPath="$PROJECT_DIR$/symfony.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html.twig" afterPath="$PROJECT_DIR$/templates/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createArrondissement.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createArrondissement.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createAttestationArretTravail.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createAttestationArretTravail.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createAttestationTravail.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createAttestationTravail.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createBanque.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createBanque.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createCharge.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createCharge.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createDelegation.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createDelegation.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createEmploye.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createEmploye.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createPartResponsablePaiement.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createPartResponsablePaiement.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createPoste.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createPoste.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createPosteDeTravail.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createPosteDeTravail.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createRappel.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createRappel.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/createSalaire.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/createSalaire.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/home.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/home.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fiche/index.html.twig" afterPath="$PROJECT_DIR$/templates/fiche/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/security_contoller/login.html.twig" afterPath="$PROJECT_DIR$/templates/security_contoller/login.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/security_contoller/registration.html.twig" afterPath="$PROJECT_DIR$/templates/security_contoller/registration.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -276,10 +145,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s make:entity Log" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="s doctrine:schema:update -f " />
-      <command text="s doctrine:schema:update" />
       <command text="s doctrine:schema:update --force " />
       <command text="php bin/console server:run" />
       <command text="s doctrine:schema:update --force " />
@@ -301,6 +166,10 @@
       <command text="rd .git /S/Q" />
       <command text="git init" />
       <command text="git add." />
+      <command text="git add ." />
+      <command text="git commit -m &quot;Commit&quot;" />
+      <command text="git remote add origin https://github.com/sadokakremi/FicheDePaie.git" />
+      <command text="git push -u origin master" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -373,7 +242,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="890" />
     <option name="width" value="1012" />
     <option name="height" value="1045" />
@@ -534,15 +403,15 @@
       <workItem from="1575049086309" duration="14379000" />
       <workItem from="1575306815661" duration="8044000" />
       <workItem from="1575380985342" duration="21442000" />
-      <workItem from="1575474831340" duration="1758000" />
+      <workItem from="1575474831340" duration="2167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256083000" />
+    <option name="totallyTimeSpent" value="256492000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19270833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
