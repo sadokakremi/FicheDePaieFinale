@@ -27,6 +27,7 @@ use App\Repository\PosteDeTravailRepository;
 use App\Repository\RappelRepository;
 use App\Repository\SalaireRepository;
 use App\Service\UserLog;
+use function PHPSTORM_META\type;
 use Psr\Log\LoggerInterface;
 
 
@@ -34,6 +35,7 @@ use Psr\Log\LoggerInterface;
 use App\Repository\EmployeRepository;
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\ORM\Mapping\Entity;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -71,13 +73,14 @@ use Dompdf\Options;
 
 
 
-
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 
 
 
 
 class FicheController extends AbstractController
 {
+private $nbre_heures_travail;
     /**
      * @Route("/fiche/indexArrondissement", name="arrondissement_index", methods={"GET"})
      */
@@ -118,6 +121,8 @@ class FicheController extends AbstractController
             "Attachment" => true
         ]);
     }
+
+
 
     /**
      * @Route("/fiche/listedelegation", name="delegation_liste", methods={"GET"})
@@ -495,6 +500,7 @@ class FicheController extends AbstractController
 
     /**
      * @Route("/fiche/salaire", name="salaire_create")
+     *
      */
 
     public function createSalaire(Request $request, ObjectManager $manager )
@@ -502,6 +508,13 @@ class FicheController extends AbstractController
     {
         $salaire = new Salaire();
         $form= $this->createFormBuilder($salaire)
+            ->add('employe', EntityType::class,
+                [
+                    'class'=> Employe::class,
+                    'choice_label' => function ($employe) {
+                        return $employe->getMatricule();
+                    }
+                ])
             ->add('type_de_paiement',  ChoiceType::class,  [
 
                 'choices' => [
@@ -512,23 +525,30 @@ class FicheController extends AbstractController
             ])
             ->add('categorie_salaire', ChoiceType::class , [
                 'choices'=> [
-                    '1'=> '1' , '2'=>'2', '3'=> '3'
+                    '0-9964'=> '0-9964' , '9964-27519'=>'9964-27519', '27519-73779'=> '27519-73779', '73779-156244'=> '73779-156244', '156244+'=> '156244+'
                 ]
 
 
             ])
-            ->add('montant_salaire', TextType::class , [
-                'attr' => [
-                    'placeholder' => "le montant du salaire"
 
-                ]
 
-            ])
+
             ->add('date_attribution_salaire')
             ->add('nbre_heures_travail')
+            ->add('nbre_heures_sup1')
+            ->add('nbre_heures_sup2')
+            ->add('prime', ChoiceType::class , [
+                'choices'=> [
+                    'Prime de Déplacement'=> 'Prime de Déplacement' , 'Indemnité de transport'=>'Indemnité de transport', 'Prime de panier'=> 'Prime de panier'
+                ]
+
+
+            ])
+
 
             ->getForm();
         $form->handleRequest($request);
+
 
         if($form->isSubmitted() && $form->isValid()) {
 
@@ -547,6 +567,7 @@ class FicheController extends AbstractController
         return $this->render('fiche/createSalaire.html.twig', [
             'formSalaire' => $form->createView()
         ]);
+
     }
 
     /**
@@ -649,8 +670,15 @@ class FicheController extends AbstractController
             ->add('diplome')
             ->add('niveau_scolaire')
             ->add('age')
-            ->add('date_de_naissance')
-            ->add('date_debut_travail')
+            ->add('salaire_de_base')
+            ->add('date_de_naissance', DateType::class, [
+                // renders it as a single text box
+                'widget' => 'single_text',
+            ])
+            ->add('date_debut_travail', DateType::class, [
+                // renders it as a single text box
+                'widget' => 'single_text',
+            ])
             ->add('createdAt')
 
 
@@ -1418,7 +1446,10 @@ class FicheController extends AbstractController
         $attestationarrettravail = new AttestationArretTravail();
         $form= $this->createFormBuilder($attestationarrettravail)
             ->add('date_saisie')
-            ->add('date_arret')
+            ->add('date_arret', DateType::class, [
+                // renders it as a single text box
+                'widget' => 'single_text',
+            ])
             ->add('condition_arret')
             ->add('employe', EntityType::class,
                 [
@@ -1600,7 +1631,6 @@ class FicheController extends AbstractController
      */
 
     public function showDelegation(Delegation $delegation){
-
 
         return $this->render('fiche/showDelegation.html.twig',[
             'delegation'=>$delegation
@@ -1863,7 +1893,10 @@ class FicheController extends AbstractController
 
     }
 
-
+    public function calculSalaire()
+    {
+        $em = $this->getDoctrine()->getManager();
+    }
 
 
 

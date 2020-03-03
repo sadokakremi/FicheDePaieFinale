@@ -10,6 +10,10 @@
             <td>{{ salaire.id }}</td>
         </tr>
         <tr>
+            <th>Matricule Employe</th>
+            <td>{{ salaire.employe.matricule }}</td>
+        </tr>
+        <tr>
             <th>Type_de_paiement</th>
             <td>{{ salaire.typedepaiement }}</td>
         </tr>
@@ -17,10 +21,7 @@
             <th>Categorie_salaire</th>
             <td>{{ salaire.categoriesalaire }}</td>
         </tr>
-        <tr>
-            <th>Montant_salaire</th>
-            <td>{{ salaire.montantsalaire }}</td>
-        </tr>
+
         <tr>
             <th>Date_attribution_salaire</th>
             <td>{{ salaire.dateattributionsalaire ? salaire.dateattributionsalaire|date('Y-m-d H:i:s') : '' }}</td>
@@ -29,6 +30,18 @@
             <th>Nbre_heures_travail</th>
             <td>{{ salaire.nbreheurestravail }}</td>
         </tr>
+        <tr>
+            <th>Nbre_heures_sup1</th>
+            <td>{{ salaire.nbreheuressup1 }}</td>
+        </tr>
+        <tr>
+            <th>Nbre_heures_sup2</th>
+            <td>{{ salaire.nbreheuressup2 }}</td>
+        </tr>
+        <tr>
+            <th>Prime</th>
+            <td>{{ salaire.prime }}</td>
+        </tr>
         </tbody>
     </table>
 
@@ -36,6 +49,7 @@
     <a href="{{ path('salaire_index') }}">retour à la liste</a>
 
     <a href="{{ path('salaire_edit', {'id': salaire.id}) }}">modifier</a>
+    <a href="{{ path('paie', {'id': salaire.id}) }}">Fiche De paie</a>
 
 
     <form method="post" action="{{ path('fiche_deleteSalaire', {'id': salaire.id}) }}" onsubmit="return confirm('Êtes-vous sûr ');">

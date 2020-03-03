@@ -22,18 +22,27 @@ class AttestationTravail
     private $date_impression;
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\Employe", cascade={"persist", "remove"})
+     * @ORM\ManyToMany(targetEntity="App\Entity\Employe", cascade={"persist", "remove"})
      */
     private $employe;
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\PartResponsablePayement", cascade={"persist", "remove"})
+     * @ORM\ManyToMany(targetEntity="App\Entity\PartResponsablePayement", cascade={"persist", "remove"})
      */
     public $partresponsablepayement;
 
+    /**
+     * AttestationTravail constructor.
+     * @param $date_impression
+     */
+    public function __construct()
+    {
+        $this->date_impression = new \DateTime();
+    }
+
     public function __toText()
     {
-        return 'id'. $this->id.'  '.'date_impression'.' '.$this->date_impression;
+        return 'id'. $this->id.'  ';
     }
 
     /**

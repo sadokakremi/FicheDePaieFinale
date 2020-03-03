@@ -5,7 +5,7 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\LogRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\Log2Repository")
  */
 class Log
 {
@@ -31,38 +31,10 @@ class Log
      */
     private $date;
 
-
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="logs")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $user;
-
-    /**
-     * @return mixed
-     */
-    public function getUser()
-    {
-        return $this->user;
-    }
-
-    /**
-     * @param mixed $user
-     */
-    public function setUser($user)
-    {
-        $this->user = $user;
-    }
-
-
-
-
-
-
-
-
-
-
 
     public function getId(): ?int
     {
@@ -101,6 +73,18 @@ class Log
     public function setDate(\DateTimeInterface $date): self
     {
         $this->date = $date;
+
+        return $this;
+    }
+
+    public function getUser(): ?string
+    {
+        return $this->user;
+    }
+
+    public function setUser(?string $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }

@@ -13,10 +13,14 @@
             <td>{{ attestationArretTravail.id }}</td>
         </tr>
         <tr>
-        <td>{{ attestationArretTravail.employe.nom }}</td>
+            <th>Employé</th>
+
+            <td>{{ attestationArretTravail.employe.nom }}</td>
         </tr>
         <tr>
-        <td>{{ attestationArretTravail.partresponsablepayement.nom_employeur }}</td>
+            <th>Employeur</th>
+
+            <td>{{ attestationArretTravail.partresponsablepayement.nom_employeur }}</td>
         </tr>
         <tr>
             <th>Date_saisie</th>
@@ -39,6 +43,7 @@
     <a href="{{ path('attestationArretTravail_index') }}">retour à la liste</a>
 
     <a href="{{ path('attestationarrettravail_edit', {'id': attestationArretTravail.id}) }}">modifier</a>
+    <a href="{{ path('attestation_arret_travail', {'id': attestationArretTravail.id}) }}">Imprimer Attestation Arret Travail</a>
 
     <form method="post" action="{{ path('fiche_deleteAttestationArretTravail', {'id': attestationArretTravail.id}) }}" onsubmit="return confirm('Êtes-vous sûr ');">
         <input type="hidden" name="_method" value="DELETE">

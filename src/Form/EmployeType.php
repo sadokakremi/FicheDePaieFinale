@@ -6,6 +6,7 @@ use App\Entity\Employe;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 
 class EmployeType extends AbstractType
 {
@@ -24,7 +25,10 @@ class EmployeType extends AbstractType
             ->add('diplome')
             ->add('niveau_scolaire')
             ->add('age')
-            ->add('date_de_naissance')
+            ->add('date_de_naissance', DateType::class, [
+                // renders it as a single text box
+                'widget' => 'single_text',
+            ])
             ->add('date_debut_travail')
             ->add('createdAt')
         ;

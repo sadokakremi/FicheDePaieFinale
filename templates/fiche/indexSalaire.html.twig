@@ -11,11 +11,16 @@
         <thead>
         <tr>
             <th>Id</th>
+            <th>Matricule Employe</th>
+
             <th>Type_de_paiement</th>
             <th>Categorie_salaire</th>
-            <th>Montant_salaire</th>
+
             <th>Date_attribution_salaire</th>
             <th>Nbre_heures_travail</th>
+            <th>Nbre_heures_sup1</th>
+            <th>Nbre_heures_sup2</th>
+            <th>Prime</th>
             <th>actions</th>
         </tr>
         </thead>
@@ -23,11 +28,18 @@
         {% for salaire in salaires %}
             <tr>
                 <td>{{ salaire.id }}</td>
+                <td>{{ salaire.employe.matricule }}</td>
+
                 <td>{{ salaire.typeDePaiement }}</td>
                 <td>{{ salaire.categorieSalaire }}</td>
-                <td>{{ salaire.montantSalaire }}</td>
+
                 <td>{{ salaire.dateAttributionSalaire ? salaire.dateAttributionSalaire|date('Y-m-d H:i:s') : '' }}</td>
                 <td>{{ salaire.nbreHeuresTravail }}</td>
+                <td>{{ salaire.nbreHeuresSup1 }}</td>
+                <td>{{ salaire.nbreHeuresSup2 }}</td>
+                <td>{{ salaire.prime }}</td>
+
+
                 <td>
                     <a href="{{ path('fiche_showSalaire', {'id': salaire.id}) }}">afficher</a>
                     <a href="{{ path('salaire_edit', {'id': salaire.id}) }}">modifier</a>

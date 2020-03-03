@@ -53,6 +53,42 @@ class User implements UserInterface
 
     public $confirm_password;
 
+    /**
+     * @return mixed
+     */
+    public function getConfirmPassword()
+    {
+        return $this->confirm_password;
+    }
+
+    /**
+     * @param mixed $confirm_password
+     */
+    public function setConfirmPassword($confirm_password)
+    {
+        $this->confirm_password = $confirm_password;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLogs()
+    {
+        return $this->logs;
+    }
+
+    /**
+     * @param mixed $logs
+     */
+    public function setLogs($logs)
+    {
+        $this->logs = $logs;
+    }
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Log", mappedBy="logs")
+     */
+    private $logs;
+
 
 
 

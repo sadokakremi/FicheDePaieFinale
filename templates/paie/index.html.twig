@@ -1,0 +1,135 @@
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<em>&nbsp; &nbsp; &nbsp; &nbsp; <span style="text-decoration: underline;">Fiche De Paie</span></em></p>
+<p><em>Date Attribution salaire: {{ salaire.dateattributionsalaire ? salaire.dateattributionsalaire|date('Y-m-d H:i:s') : '' }}&nbsp;</em></p>
+<p><em>Matricule: {{salaire.employe.matricule }}</em></p>
+<p>&nbsp;</p>
+<table style="height: 104px;" width="480">
+    <tbody>
+    <tr>
+        <td style="width: 232px;">Nom &amp; Prenom</td>
+        <td style="width: 232px;">{{ salaire.employe.nom }}   {{ salaire.employe.prenom }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">N&deg;CNSS</td>
+        <td style="width: 232px;">{{ salaire.employe.cnss }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">Situation Familiale</td>
+        <td style="width: 232px;">{{ salaire.employe.statutfamilial }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">Qualification</td>
+        <td style="width: 232px;">{{ salaire.employe.diplome }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">Recrut&eacute; le</td>
+        <td style="width: 232px;">{{ salaire.employe.datedebuttravail ? salaire.employe.datedebuttravail|date('Y-m-d') : '' }}</td>
+    </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<table style="width: 681px; height: 292px;">
+    <tbody>
+    <tr style="height: 18px;">
+        <td style="width: 161px; height: 18px;"><span style="background-color: #ccffff;"><span style="background-color: #ffff99;">Rubrique</span></span></td>
+        <td style="width: 134px; height: 18px;"><span style="background-color: #ffff99;">Base</span></td>
+        <td style="width: 121px; height: 18px;"><span style="background-color: #ffff99;">Taux</span></td>
+        <td style="width: 115px; height: 18px;"><span style="background-color: #ffff99;">Nombre</span></td>
+        <td style="width: 116px; height: 18px;"><span style="background-color: #ffff99;">Montant</span></td>
+    </tr>
+    <tr style="height: 18px;">
+        <td style="width: 161px; height: 18px;">Pr&eacute;sence th&eacute;orique du mois</td>
+        <td style="width: 134px; height: 18px;">208</td>
+        <td style="width: 121px; height: 18px;">&nbsp;</td>
+        <td style="width: 115px; height: 18px;">&nbsp;</td>
+        <td style="width: 116px; height: 18px;">&nbsp;</td>
+    </tr>
+    <tr style="height: 18px;">
+        <td style="width: 161px; height: 18px;">Salaire base</td>
+        <td style="width: 134px; height: 18px;">{{ salaire.employe.salairedebase }}</td>
+        <td style="width: 121px; height: 18px;">&nbsp;</td>
+        <td style="width: 115px; height: 18px;">{{ salaire.nbreheurestravail }}</td>
+        <td style="width: 116px; height: 18px;">&nbsp; {{  salaire.employe.salairedebase  *   salaire.nbreheurestravail   }}  </td>
+
+    </tr>
+    <tr style="height: 15px;">
+        <td style="width: 161px; height: 15px;">H Supp 1</td>
+        <td style="width: 134px; height: 15px;">&nbsp;</td>
+        <td style="width: 121px; height: 15px;">&nbsp125%</td>
+        <td style="width: 115px; height: 15px;">&nbsp{{ salaire.nbreheuressup1 }}</td>
+        <td style="width: 116px; height: 15px;">&nbsp;{{ salaire.nbreheuressup1 *1.25}}</td>
+    </tr>
+    <tr style="height: 18px;">
+        <td style="width: 161px; height: 18px;">H Supp 2</td>
+        <td style="width: 134px; height: 18px;">&nbsp;</td>
+        <td style="width: 121px; height: 18px;">&nbsp;150%</td>
+        <td style="width: 115px; height: 18px;">&nbsp;{{ salaire.nbreheuressup2 }}</td>
+        <td style="width: 116px; height: 18px;">&nbsp;{{ salaire.nbreheuressup2 *1.5}}</td>
+    </tr>
+    <tr style="height: 18px;">
+        <td style="width: 161px; height: 18px;">Prime de d&eacute;placement</td>
+        <td style="width: 134px; height: 18px;">&nbsp;0</td>
+        <td style="width: 121px; height: 18px;">&nbsp;</td>
+        <td style="width: 115px; height: 18px;">&nbsp;</td>
+        <td style="width: 116px; height: 18px;">&nbsp;0.000</td>
+    </tr>
+    <tr style="height: 18px;">
+        <td style="width: 161px; height: 18px;">Ind&eacute;mnit&eacute; de transport</td>
+        <td style="width: 134px; height: 18px;">&nbsp;15</td>
+        <td style="width: 121px; height: 18px;">&nbsp;</td>
+        <td style="width: 115px; height: 18px;">&nbsp;</td>
+        <td style="width: 116px; height: 18px;">&nbsp;15.000</td>
+    </tr>
+    <tr style="height: 18px;">
+        <td style="width: 161px; height: 18px;">Prime de panier</td>
+        <td style="width: 134px; height: 18px;">&nbsp;8</td>
+        <td style="width: 121px; height: 18px;">&nbsp;</td>
+        <td style="width: 115px; height: 18px;">&nbsp;</td>
+        <td style="width: 116px; height: 18px;">&nbsp;8.000</td>
+    </tr>
+    <tr style="height: 18px;">
+        <td style="width: 161px; height: 18px;">Base CNSS</td>
+        <td style="width: 134px; height: 18px;">&nbsp;</td>
+        <td style="width: 121px; height: 18px;">&nbsp;</td>
+        <td style="width: 115px; height: 18px;">&nbsp;</td>
+        <td style="width: 116px; height: 18px;">&nbsp;{% set foo = (salaire.employe.salairedebase  *   salaire.nbreheurestravail) + (salaire.nbreheuressup1 *1.25) + (salaire.nbreheuressup2 *1.5)+ 15 + 8 %}
+            {{foo}}</td>
+    </tr>
+    <tr style="height: 22px;">
+        <td style="width: 161px; height: 22px;">CNSS</td>
+        <td style="width: 134px; height: 22px;">&nbsp;</td>
+        <td style="width: 121px; height: 22px;">&nbsp;9,18%</td>
+        <td style="width: 115px; height: 22px;">&nbsp;</td>
+        <td style="width: 116px; height: 22px;">&nbsp;{% set boo = (foo*9.18)/100%}  {{ boo }}</td>
+    </tr>
+    <tr style="height: 24px;">
+        <td style="width: 161px; height: 24px;">Base imposable</td>
+        <td style="width: 134px; height: 24px;">&nbsp;</td>
+        <td style="width: 121px; height: 24px;">&nbsp;</td>
+        <td style="width: 115px; height: 24px;">&nbsp;</td>
+        <td style="width: 116px; height: 24px;">&nbsp;{% set soo = foo-boo %} {{ soo }}</td>
+    </tr>
+    <tr style="height: 29px;">
+        <td style="width: 161px; height: 29px;">Impot</td>
+        <td style="width: 134px; height: 29px;">&nbsp;</td>
+        <td style="width: 121px; height: 29px;">&nbsp;</td>
+        <td style="width: 115px; height: 29px;">&nbsp;</td>
+        <td style="width: 116px; height: 29px;">&nbsp;</td>
+    </tr>
+    </tbody>
+</table>
+<table style="width: 673px;">
+    <tbody>
+    <tr>
+        <td style="width: 575px;"><span style="background-color: #ffff99;">Total Salaire</span></td>
+        <td style="width: 112px;">&nbsp;{{ soo }}</td>
+    </tr>
+    <tr>
+        <td style="width: 575px;">Avance</td>
+        <td style="width: 112px;">&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="width: 575px;"><span style="background-color: #ffff99;">Net &agrave; Payer</span></td>
+        <td style="width: 112px;">&nbsp;{{ soo }}</td>
+    </tr>
+    </tbody>
+</table>

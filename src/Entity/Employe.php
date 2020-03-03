@@ -60,7 +60,7 @@ class Employe
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $matricule;
+    public $matricule;
 
     /**
      * @ORM\Column(type="integer")
@@ -97,9 +97,61 @@ class Employe
      */
     private $createdAt;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Salaire", mappedBy="salaires")
+     */
+    private $salaires;
+
+    /**
+     * Employe constructor.
+     * @param $createdAt
+     */
+    public function __construct()
+    {
+        $this->createdAt  = new \DateTime();
+    }
+
+
+    /**
+     * @return mixed
+     */
+    public function getSalaires()
+    {
+        return $this->salaires;
+    }
+
+    /**
+     * @param mixed $salaires
+     */
+    public function setSalaires($salaires)
+    {
+        $this->salaires = $salaires;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSalaireDeBase()
+    {
+        return $this->salaire_de_base;
+    }
+
+    /**
+     * @param mixed $salaire_de_base
+     */
+    public function setSalaireDeBase($salaire_de_base)
+    {
+        $this->salaire_de_base = $salaire_de_base;
+    }
+
+    /**
+     * @ORM\Column(type="float")
+     */
+    private $salaire_de_base;
+
     public function __toText()
     {
-        return 'id'. $this->id.'  '.'cin'.' '.$this->cin.'  '.'cnss'.' '.$this->cnss.'  '.'nom'.' '.$this->nom.'  '.'prenom'.' '.$this->prenom.'  '.'lieu_de_naissance'.' '.$this->lieu_de_naissance.'  '.'statut_familial'.' '.$this->statut_familial.'  '.'adresse'.' '.$this->adresse.'  '.'matricule'.' '.$this->matricule.'  '.'telephone'.' '.$this->telephone.'  '.'diplome'.' '.$this->diplome.'  '.'niveau_scolaire'.' '.$this->niveau_scolaire.'  '.'age'.' '.$this->age.'  '.'date_de_naissance'.' '.$this->date_de_naissance.'  '.'date_debut_travail'.' '.$this->date_debut_travail.'  '.'createdAt'.' '.$this->createdAt;
+        return 'id'. $this->id.'  '.'cin'.' '.$this->cin.'  '.'cnss'.' '.$this->cnss.'  '.'nom'.' '.$this->nom.'  '.'prenom'.' '.$this->prenom.'  '.'lieu_de_naissance'.' '.$this->lieu_de_naissance.'  '.'statut_familial'.' '.$this->statut_familial.'  '.'adresse'.' '.$this->adresse.'  '.'matricule'.' '.$this->matricule.'  '.'telephone'.' '.$this->telephone.'  '.'diplome'.' '.$this->diplome.'  '.'niveau_scolaire'.' '.$this->niveau_scolaire.'  '.'age'.' '.$this->age.' '.'salaire_de_base'.' '.$this->salaire_de_base;
     }
 
     public function getId(): ?int
@@ -289,7 +341,8 @@ class Employe
 
     public function __toString()
     {
-        return $this->nom;    }
+        return $this->nom;
+    }
 
 
 }

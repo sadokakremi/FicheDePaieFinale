@@ -27,6 +27,7 @@
     <a href="{{ path('attestationTravail_index') }}">la liste</a>
 
     <a href="{{ path('attestationTravail_edit', {'id': attestationTravail.id}) }}">modifier</a>
+    <a href="{{ path('attestation_travail', {'id': attestationTravail.id}) }}">Imprimer Attestation de Travail</a>
 
 
     <form method="post" action="{{ path('fiche_deleteAttestationTravail', {'id': attestationTravail.id}) }}" onsubmit="return confirm('Êtes-vous sûr ');">

@@ -1,0 +1,33 @@
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<em>&nbsp; &nbsp; &nbsp; &nbsp; <span style="text-decoration: underline;">Attestation Travail</span></em></p>
+<p><em>Date_impression: {{ attestationTravail.dateImpression ? attestationTravail.dateImpression|date('Y-m-d H:i:s') : '' }}&nbsp;</em></p>
+<p><em>Id: {{ attestationTravail.id }}</em></p>
+<p>&nbsp;</p>
+<table style="height: 104px;" width="480">
+    <tbody>
+    <tr>
+        <td style="width: 232px;">Nom &amp; Prenom</td>
+        <td style="width: 232px;">{{ attestationTravail.employe.nom }}   {{ attestationTravail.employe.prenom }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">N&deg;CNSS</td>
+        <td style="width: 232px;">{{ attestationTravail.employe.cnss }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">Situation Familiale</td>
+        <td style="width: 232px;">{{ attestationTravail.employe.statutfamilial }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">Qualification</td>
+        <td style="width: 232px;">{{ attestationTravail.employe.diplome }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">Recrut&eacute; le</td>
+        <td style="width: 232px;">{{ attestationTravail.employe.datedebuttravail ? attestationTravail.employe.datedebuttravail|date('Y-m-d') : '' }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">nom employeur</td>
+        <td style="width: 232px;">{{ attestationTravail.partresponsablepayement.nom_employeur }}</td>
+    </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>

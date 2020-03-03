@@ -1,0 +1,41 @@
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<em>&nbsp; &nbsp; &nbsp; &nbsp; <span style="text-decoration: underline;">Attestation Arret De Travail</span></em></p>
+<p><em>Date_impression: {{ attestationArretTravail.dateSaisie ? attestationArretTravail.dateSaisie|date('Y-m-d H:i:s') : '' }}&nbsp;</em></p>
+<p><em>Id: {{ attestationArretTravail.id }}</em></p>
+<p>&nbsp;</p>
+<table style="height: 104px;" width="480">
+    <tbody>
+    <tr>
+        <td style="width: 232px;">Nom &amp; Prenom</td>
+        <td style="width: 232px;">{{ attestationArretTravail.employe.nom }}   {{ attestationArretTravail.employe.prenom }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">N&deg;CNSS</td>
+        <td style="width: 232px;">{{ attestationArretTravail.employe.cnss }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">Situation Familiale</td>
+        <td style="width: 232px;">{{ attestationArretTravail.employe.statutfamilial }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">Qualification</td>
+        <td style="width: 232px;">{{ attestationArretTravail.employe.diplome }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">Recrut&eacute; le</td>
+        <td style="width: 232px;">{{ attestationArretTravail.employe.datedebuttravail ? attestationArretTravail.employe.datedebuttravail|date('Y-m-d') : '' }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">nom employeur</td>
+        <td style="width: 232px;">{{ attestationArretTravail.partresponsablepayement.nom_employeur }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">Date_arret</td>
+        <td style="width: 232px;">{{ attestationArretTravail.dateArret ? attestationArretTravail.dateArret|date('Y-m-d H:i:s') : '' }}</td>
+    </tr>
+    <tr>
+        <td style="width: 232px;">Condition_arret</td>
+        <td style="width: 232px;">{{ attestationArretTravail.conditionArret }}</td>
+    </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
